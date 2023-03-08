@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Device</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -19,38 +19,44 @@
       <div class="container">
         <nav class="navigation">
           <div class="navigation-container">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html">
-                <picture>
-                  <img class="navigation__logo" src="./img/svg/logo-desktop.svg" width="215" height="55"
-                    alt="Логотип Smart Device">
-                </picture>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="info$sd.ru">
-                info$sd.ru
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="+74950005252">
-                +7 (495) 000 52 52
-              </a>
-            </li>
-            <li class="navigation__item">
-              <button class="btn btn--navigation" type="button">Заказать звонок</button>
-            </li>
-          </ul>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">
+                  <picture>
+                    <img class="navigation__logo" src="./img/svg/logo-desktop.svg" width="215" height="55"
+                      alt="Логотип Smart Device">
+                  </picture>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="info$sd.ru">
+                  <svg width="21" height="20" fill="none">
+                   <use href="img/sprite/sprite.svg#nav-mail">
+                  </svg>
+                  info$sd.ru
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="+74950005252">
+                  <svg width="21" height="20" fill="none">
+                    <use href="img/sprite/sprite.svg#nav-phone"></use>
+                  </svg>
+                  +7 (495) 000 52 52
+                </a>
+              </li>
+              <li class="navigation__item">
+                <button class="btn btn--navigation" type="button">Заказать звонок</button>
+              </li>
+            </ul>
         </nav>
       </div>
-      </div>
-    </header>
-    <main>
-    </main>
-    <footer>
-      <div class="container"></div>
-    </footer>
+  </div>
+  </header>
+  <main>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
   </div>
 
   <!-- Модалки -->
