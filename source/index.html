@@ -14,43 +14,42 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <div class="navigation-container">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="index.html">
-                  <picture>
-                    <img class="navigation__logo" src="./img/svg/logo-desktop.svg" width="215" height="55"
-                      alt="Логотип Smart Device">
-                  </picture>
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="info$sd.ru">
-                  <svg width="21" height="20" fill="none">
-                   <use href="img/sprite/sprite.svg#nav-mail">
-                  </svg>
-                  info$sd.ru
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="+74950005252">
-                  <svg width="21" height="20" fill="none">
-                    <use href="img/sprite/sprite.svg#nav-phone"></use>
-                  </svg>
-                  +7 (495) 000 52 52
-                </a>
-              </li>
-              <li class="navigation__item">
-                <button class="btn btn--navigation" type="button">Заказать звонок</button>
-              </li>
-            </ul>
-        </nav>
+  <header class="header">
+    <div class="navigation-container">
+      <div class="navigation-wrapper">
+      <a class="navigation__link" href="index.html">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./img/svg/logo-mobile.svg">
+          <img class="navigation__logo" src="./img/svg/logo-desktop.svg" width="215" height="55"
+            alt="Логотип Smart Device">
+        </picture>
+      </a>
       </div>
-  </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="info$sd.ru">
+              <svg width="21" height="20" fill="none">
+                <use href="img/sprite/sprite.svg#nav-mail">
+              </svg>
+              <span class="navigation__span navigation__span--hidden">info@sd.ru</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="+74950005252">
+              <svg width="21" height="20" fill="none">
+                <use href="img/sprite/sprite.svg#nav-phone"></use>
+              </svg>
+              <span class="navigation__span navigation__span--hidden">+7 (495) 000 52 52</span>
+
+            </a>
+          </li>
+          <li class="navigation__item navigation__item--button">
+            <button class="btn btn--navigation" type="button">Заказать звонок</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
   </main>
