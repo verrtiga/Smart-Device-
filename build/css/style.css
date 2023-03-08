@@ -648,7 +648,9 @@ button,
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 10px 20px;
-  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #f2f5f6;
+  text-transform: uppercase;
   background-color: #000000;
   border: none;
   cursor: pointer;
@@ -1295,6 +1297,53 @@ button,
 
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.navigation-container {
+  padding: 30px 145px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.btn--navigation {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #041827;
+  border: 1px solid #f2f5f6;
+  border-radius: 3px;
+}
+
+.navigation__link {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #f2f5f6;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 
 /* @mixin hover-focus {
