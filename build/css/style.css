@@ -385,11 +385,35 @@ template {
 }
 
 @font-face {
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-  font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("/fonts/PTMono-Regular.woff2") format(woff2), url("/fonts/PTMono-Regular.woff") format(woff);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Roboto-Medium.woff2") format(woff2), url("/fonts/Roboto-Medium.woff") format(woff);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/RobotoCondensed-Bold.woff2") format(woff2), url("/fonts/RobotoCondensed-Bold.woff") format(woff);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/RobotoCondensed-Regular.woff2") format(woff2), url("/fonts/RobotoCondensed-Regular.woff") format(woff);
+  font-display: block;
 }
 
 *,
@@ -625,7 +649,7 @@ button,
   display: inline-flex;
   padding: 10px 20px;
   color: #ffffff;
-  background-color: #2c39f2;
+  background-color: #000000;
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
@@ -634,7 +658,7 @@ button,
 }
 
 .btn--red {
-  background-color: #ff1553;
+  background-color: #000000;
 }
 
 .btn:disabled {
@@ -1313,12 +1337,6 @@ button,
     }
   }
 */
-
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
 
 @media (max-width: 1023px) {
   .container {
