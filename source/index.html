@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Device</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="">
-    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="">
-    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="">
-    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container">
-          <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item"></li>
-              <li class="navigation__item"></li>
-              <li class="navigation__item"></li>
-              <li class="navigation__item"></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
 
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Device</title>
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="navigation-container">
+      <div class="navigation-wrapper">
+      <a class="navigation__link" href="index.html">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./img/svg/logo-mobile.svg">
+          <img class="navigation__logo" src="./img/svg/logo-desktop.svg" width="215" height="55"
+            alt="Логотип Smart Device">
+        </picture>
+      </a>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="info$sd.ru">
+              <svg class="navigation__icon" width="21" height="20" fill="none">
+                <use href="img/sprite/sprite.svg#nav-mail">
+              </svg>
+              <span class="navigation__span navigation__span--hidden">info@sd.ru</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="+74950005252">
+              <svg class="navigation__icon" width="21" height="20" fill="none">
+                <use href="img/sprite/sprite.svg#nav-phone"></use>
+              </svg>
+              <span class="navigation__span navigation__span--hidden">+7 (495) 000 52 52</span>
+
+            </a>
+          </li>
+          <li class="navigation__item navigation__item--button">
+            <button class="btn btn--navigation" type="button">Заказать звонок</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
+  </div>
+
+  <!-- Модалки -->
+  <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -61,7 +87,8 @@
       </div>
     </div> -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

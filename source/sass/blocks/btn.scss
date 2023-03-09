@@ -1,8 +1,9 @@
 .btn {
   display: inline-flex;
   padding: 10px 20px;
-
-  color: $color-default-white;
+  font-family: $ff-robotocond;
+  color: $color-alice-blue;
+  text-transform: uppercase;
 
   background-color: $color-default-black;
   border: none;
