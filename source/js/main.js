@@ -48,3 +48,11 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+const titles = document.querySelectorAll('.footer__title');
+
+titles.forEach((title) => {
+  title.addEventListener('click', () => {
+    title.classList.toggle('active');
+  });
+});

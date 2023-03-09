@@ -1247,6 +1247,82 @@ button,
   margin: 0 auto;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #041827;
+  padding: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer__block {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 107%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.05em;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-height: 130px;
+}
+
+.footer__item {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: #333;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1341,6 +1417,44 @@ button,
   .navigation__logo {
     width: 35px;
     height: 35px;
+  }
+
+  .footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__block {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer__list {
+    display: none;
+  }
+
+  .footer__title::after {
+    content: "+";
+    float: right;
+  }
+
+  .footer__title.active::after {
+    content: "-";
+  }
+
+  .footer__title:hover {
+    cursor: pointer;
+    color: #333;
+  }
+
+  .footer__title.active,
+  .footer__title:hover {
+    color: #333;
+  }
+
+  .footer__title.active + .footer__list {
+    display: block;
   }
 }
 
