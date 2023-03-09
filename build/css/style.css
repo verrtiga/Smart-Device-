@@ -1178,8 +1178,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .navigation__list {
@@ -1191,6 +1192,9 @@ button,
   list-style: none;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .btn--navigation {
@@ -1208,6 +1212,8 @@ button,
 }
 
 .navigation__link {
+  display: inline-block;
+  position: relative;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1218,6 +1224,11 @@ button,
 
 .navigation__item:not(:last-child) {
   margin-right: 150px;
+}
+
+.navigation__icon {
+  position: absolute;
+  left: -29px;
 }
 
 .header {
@@ -1298,6 +1309,10 @@ button,
     width: 21px;
     height: 20px;
     margin-right: 42px;
+  }
+
+  .navigation__icon {
+    position: unset;
   }
 
   .header-container {
