@@ -636,9 +636,14 @@ button,
   outline: none;
 }
 
+.main {
+  background-color: #ffffff;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 40px;
+  width: 1920px;
 }
 
 .btn {
@@ -1399,6 +1404,54 @@ button,
 
 .hero__button--hidden {
   display: none;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  list-style-type: none;
+  gap: 30px;
+}
+
+.advantages-container {
+  padding: 250px 80px;
+}
+
+.advantages__item-container {
+  border: 1px solid #e5e5e5;
+  border-left: 5px solid #00b2ff;
+  padding: 35px 45px;
+  height: 300px;
+}
+
+.advantages__item-container:hover {
+  background-color: #00b2ff;
+  color: #ffffff;
+}
+
+.advantages__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #00b2ff;
+}
+
+.advantages__description {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #041827;
 }
 
 /* @mixin hover-focus {
