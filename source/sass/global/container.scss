@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+  
+  
+    @include vp-1023 {
+      padding: 0 24px;
+    }
+  
+    @include vp-767 {
+      padding: 0 25px;
+    }
+  }

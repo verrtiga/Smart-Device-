@@ -48,3 +48,24 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+const titles = document.querySelectorAll('.footer__title');
+
+titles.forEach((title) => {
+  title.addEventListener('click', () => {
+    if (title.classList.contains('footer__title--disable')) {
+      title.classList.remove('footer__title--disable');
+      title.classList.add('footer__title--active');
+  
+    } else {
+      title.classList.add('footer__title--disable');
+      title.classList.remove('footer__title--active');
+    }
+  });
+});
+
+
+
+
+
+
