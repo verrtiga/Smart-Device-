@@ -1,0 +1,112 @@
+.hero {
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop.jpg");
+    max-width: 100%;
+    height: 880px;
+    position: relative;
+    top: -19px;
+
+    @include vp-1023 {
+        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 540px;
+    }
+
+    @include vp-767 {
+        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile.jpg");
+        background-size: cover;
+    }
+
+}
+
+.hero-container {
+    position: absolute;
+    left: 21%;
+    transform: translate-X(-50%);
+    padding-top: 250px;
+
+    @include vp-1023 {
+        left: 8%;
+        padding-top: 150px;
+        padding-right: 50px;
+    }
+
+    @include vp-767 {
+        padding-right: 20px;
+        padding-top: 93px;
+    }
+}
+
+.hero__title {
+    margin: 0;
+    padding: 0;
+    font-family: $ff-robotocond;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $color-alice-blue;
+    margin-bottom: 40px;
+
+    @include vp-1023 {
+        font-size: 63px;
+        line-height: 75px;
+        margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+.hero__description {
+    margin: 0;
+    padding: 0;
+    font-family: $ff-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 155%;
+    color: $color-alice-blue;
+    margin-bottom: 40px;
+
+    @include vp-767 {
+
+        font-size: 14px;
+    }
+
+}
+
+.hero__button {
+    background-color: $color-deep-sky-blue;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 410px;
+    padding: 15px 25px;
+    border-radius: 3px;
+}
+
+.hero__button--mobile {
+  
+    @include vp-767 {
+        display: none;
+    }
+}
+
+.hero__button--hidden {
+    display: none;
+
+    @include vp-767 {
+        display: block;
+        width: 270px;
+        padding: 10px 30px;
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+}
