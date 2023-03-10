@@ -5,16 +5,29 @@
     position: relative;
     top: -19px;
 
+    @include retina {
+        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
+        background-size: cover;
+    }
+
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 540px;
+
+        @include retina {
+            background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet@2x.jpg");
+        }
     }
 
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile.jpg");
         background-size: cover;
+
+        @include retina {
+            background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile@2x.jpg");
+        }
     }
 
 }
