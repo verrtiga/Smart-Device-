@@ -1,9 +1,24 @@
 .hero {
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop.jpg");
-    max-width: 100%;
-    height: 880px;
     position: relative;
-    top: -19px;
+    max-width: 1920px;
+    height: 880px;
+
+    @include vp-1023 {
+        height: 660px;
+    }
+
+    @include vp-767 {
+        height: 560px;
+    }
+}
+
+.hero::before {
+    content: "";
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop.jpg");
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: -20px;
 
     @include retina {
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
@@ -14,7 +29,7 @@
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 540px;
+        height: 680px;
 
         @include retina {
             background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet@2x.jpg");
@@ -24,6 +39,7 @@
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile.jpg");
         background-size: cover;
+        height: 580px;
 
         @include retina {
             background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile@2x.jpg");
