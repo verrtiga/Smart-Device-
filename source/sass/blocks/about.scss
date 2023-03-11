@@ -1,0 +1,55 @@
+.about-container {
+    padding: 50px 124px;
+    position: relative;
+    max-width: 1220px;
+    margin:0 auto;
+
+}
+
+.about-container::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../../img/about-year.png");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 320px;
+    left: -93px;
+
+}
+
+.about__button {
+    background-color: transparent;
+    border: 1px solid $color-deep-sky-blue;
+    color: $color-deep-sky-blue;
+}
+
+.about__additional--hidden {
+    display: none;
+}
+
+.about__title {
+    margin: 0;
+    font-family: $ff-robotocond;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $color-black-pearl;
+    margin-bottom: 15px;
+}
+
+.about__description {
+    margin: 0;
+    font-family: $ff-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-black-pearl;
+    margin-bottom: 30px;
+}
+
+.about__additional {
+    margin-top: 30px;
+}
