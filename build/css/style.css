@@ -1806,6 +1806,30 @@ button,
     font-size: 14px;
     line-height: 16px;
   }
+
+  .advantages__list {
+    display: block;
+    gap: 0;
+  }
+
+  .advantages-container {
+    padding: 50px 20px;
+  }
+
+  .advantages__item-container {
+    height: 340px;
+    min-width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .advantages__description {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 767px) {

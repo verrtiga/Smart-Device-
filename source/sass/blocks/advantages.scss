@@ -5,6 +5,11 @@
     grid-template-columns: repeat(2, auto);
     list-style-type: none;
     gap: 30px;
+
+    @include vp-767 {
+        display: block;
+        gap: 0;
+    }
 }
 
 .advantages__item {
@@ -17,8 +22,12 @@
     @include vp-1023 {
         padding: 80px 50px;
     }
-    
-} 
+
+    @include vp-767 {
+        padding: 50px 20px;
+    }
+
+}
 
 .advantages__item-container {
     border: 1px solid $color-whisper;
@@ -27,7 +36,7 @@
     min-height: 300px;
     max-width: 595px;
 
-    &:hover{
+    &:hover {
         background-color: $color-deep-sky-blue;
         color: $color-default-white;
     }
@@ -36,14 +45,20 @@
         height: 360px;
         min-width: 320px;
     }
+
+    @include vp-767 {
+        height: 340px;
+        min-width: 270px;
+        margin-bottom: 30px;
+    }
 }
 
-.advantages__item-container:hover .advantages__title{
+.advantages__item-container:hover .advantages__title {
     color: $color-default-white;
 }
 
 .advantages__item-container:hover .advantages__description {
-  color: $color-default-white;
+    color: $color-default-white;
 }
 
 .advantages__title {
@@ -61,7 +76,12 @@
     @include vp-1023 {
         margin-top: 15px;
     }
-    
+
+    @include vp-767 {
+        font-size: 20px;
+        margin: 0;
+    }
+
 }
 
 
@@ -74,12 +94,17 @@
     font-size: 16px;
     line-height: 135%;
     color: $color-black-pearl;
+
+    @include vp-767 {
+        font-size: 14px;
+
+    }
 }
 
-.advantages__icon  {
+.advantages__icon {
     fill: $color-deep-sky-blue;
 }
 
-.advantages__item-container:hover .advantages__icon{
+.advantages__item-container:hover .advantages__icon {
     fill: $color-default-white;
-  }
+}
