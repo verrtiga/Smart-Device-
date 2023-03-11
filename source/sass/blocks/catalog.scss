@@ -1,0 +1,144 @@
+.catalog {
+    background-color: $color-black-pearl;
+    padding-top: 58px;
+    padding-bottom: 100px;
+}
+
+.catalog__card {
+    position: relative;
+}
+
+.catalog__card:not(:last-child) {
+    margin-right: 85px;
+
+    @include vp-1023 {
+        margin:0;
+        margin-bottom: 30px;
+    }
+}
+
+.catalog__title {
+    font-family: $ff-robotocond;
+    display: inline-block;
+    padding-left: 350px;
+    padding-bottom: 45px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $color-default-white;
+    margin: 0;
+
+    @include vp-1023 {
+        padding-left: 81px;
+    }
+
+    @include vp-767 {
+        font-size: 28px;
+        line-height: 39px;
+    }
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1220px;
+    margin: 0 auto;
+
+    @include vp-1023 {
+        display: block;
+        padding: 0 50px;
+    }
+
+}
+
+
+
+.catalog__name {
+    position: absolute;
+    margin: 0;
+    font-family: $ff-robotocond;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    top: 60px;
+    left: 41px;
+    color: $color-default-white;
+
+    @include vp-767 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+}
+
+.catalog__card--production {
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
+    width: 350px;
+    height: 650px;
+
+    @include vp-1023 {
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-tablet.jpg");
+        width: 670px;
+        height: 250px;
+    }
+
+    @include vp-767 {
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-mobile.jpg");
+        width: 270px;
+        height: 250px;
+    }
+
+}
+
+.catalog__card--install {
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-desk.jpg");
+    width: 350px;
+    height: 650px;
+
+    @include vp-1023 {
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-tablet.jpg");
+        width: 670px;
+        height: 250px;
+    }
+
+    @include vp-767 {
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-mobile.jpg");
+        width: 270px;
+        height: 250px;
+    }
+}
+
+.catalog__card--complect {
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-desk.jpg");
+    width: 350px;
+    height: 650px;
+
+    @include vp-1023 {
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-tablet.jpg");
+        width: 670px;
+        height: 250px;
+    }
+
+    @include vp-767 {
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-mobile.jpg");
+        width: 270px;
+        height: 250px;
+    }
+}
+
+.catalog__button {
+    width: 60px;
+    height: 60px;
+    background-color: $color-deep-sky-blue;
+    border-radius: 3px;
+    background-image: url(../../img/svg/arrow-catalog.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
