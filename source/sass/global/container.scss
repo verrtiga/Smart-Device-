@@ -1,6 +1,7 @@
 .container {
     margin: 0 auto;
     padding: 0 40px;
+    width: 1920px;
   
   
     @include vp-1023 {

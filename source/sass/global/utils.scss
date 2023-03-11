@@ -69,3 +69,7 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.main {
+  background-color: $color-default-white;
+}

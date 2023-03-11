@@ -636,9 +636,14 @@ button,
   outline: none;
 }
 
+.main {
+  background-color: #ffffff;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 40px;
+  width: 1920px;
 }
 
 .btn {
@@ -648,6 +653,7 @@ button,
   padding: 10px 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #f2f5f6;
+  font-weight: 700;
   text-transform: uppercase;
   background-color: #000000;
   border: none;
@@ -1340,6 +1346,146 @@ button,
   color: #333;
 }
 
+.hero {
+  position: relative;
+  max-width: 1920px;
+  height: 880px;
+}
+
+.hero::before {
+  content: "";
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/main-background-desktop.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop.jpg");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop.jpg");
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  top: -20px;
+}
+
+.hero-container {
+  position: absolute;
+  left: 21%;
+  -webkit-transform: translate-X(-50%);
+  -ms-transform: translate-X(-50%);
+  transform: translate-X(-50%);
+  padding-top: 250px;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f2f5f6;
+  margin-bottom: 40px;
+}
+
+.hero__description {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+  color: #f2f5f6;
+  margin-bottom: 40px;
+}
+
+.hero__button {
+  background-color: #00b2ff;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  width: 410px;
+  padding: 15px 25px;
+  border-radius: 3px;
+}
+
+.hero__button--hidden {
+  display: none;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  list-style-type: none;
+  gap: 30px;
+}
+
+.advantages__item {
+  max-width: 595px;
+}
+
+.advantages-container {
+  padding: 120px 329px;
+}
+
+.advantages__item-container {
+  border: 1px solid #e5e5e5;
+  border-left: 5px solid #00b2ff;
+  padding: 35px 45px;
+  min-height: 300px;
+  max-width: 595px;
+}
+
+.advantages__item-container:hover {
+  background-color: #00b2ff;
+  color: #ffffff;
+}
+
+.advantages__item-container:hover .advantages__title {
+  color: #ffffff;
+}
+
+.advantages__item-container:hover .advantages__description {
+  color: #ffffff;
+}
+
+.advantages__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #00b2ff;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.advantages__description {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #041827;
+}
+
+.advantages__icon {
+  fill: #00b2ff;
+}
+
+.advantages__item-container:hover .advantages__icon {
+  fill: #ffffff;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1454,6 +1600,52 @@ button,
 
   .footer__list--social {
     margin-left: auto;
+  }
+
+  .hero {
+    height: 660px;
+  }
+
+  .hero::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/main-background-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+  }
+
+  .hero-container {
+    left: 8%;
+    padding-top: 150px;
+    padding-right: 50px;
+  }
+
+  .hero__title {
+    font-size: 63px;
+    line-height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .advantages-container {
+    padding: 80px 50px;
+  }
+
+  .advantages__item-container {
+    height: 360px;
+    min-width: 320px;
+  }
+
+  .advantages__title {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .hero::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/main-background-tablet@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet@2x.jpg");
   }
 }
 
@@ -1576,6 +1768,68 @@ button,
   .footer__title--active + .footer__list {
     display: block;
   }
+
+  .hero {
+    height: 560px;
+  }
+
+  .hero::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/main-background-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile.jpg");
+    background-size: cover;
+    height: 580px;
+  }
+
+  .hero-container {
+    padding-right: 20px;
+    padding-top: 93px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hero__description {
+    font-size: 14px;
+  }
+
+  .hero__button--mobile {
+    display: none;
+  }
+
+  .hero__button--hidden {
+    display: block;
+    width: 270px;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .advantages__list {
+    display: block;
+    gap: 0;
+  }
+
+  .advantages-container {
+    padding: 50px 20px;
+  }
+
+  .advantages__item-container {
+    height: 340px;
+    min-width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .advantages__description {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1632,6 +1886,14 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/main-background-mobile@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile@2x.jpg");
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -1643,5 +1905,14 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .hero::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/main-background-desktop@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
+    background-size: cover;
   }
 }
