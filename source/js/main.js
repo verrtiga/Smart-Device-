@@ -64,6 +64,20 @@ titles.forEach((title) => {
   });
 });
 
+const button = document.querySelector(".about__button");
+const details = document.querySelector(".about__additional");
+
+button.addEventListener("click", () => {
+  if (details.classList.contains("about__additional--hidden")) {
+    details.classList.remove("about__additional--hidden");
+    button.textContent = "Свернуть";
+  } else {
+    details.classList.add("about__additional--hidden");
+    button.textContent = "Подробнее";
+  }
+});
+
+
 
 
 

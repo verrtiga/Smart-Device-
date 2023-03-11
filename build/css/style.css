@@ -1486,6 +1486,65 @@ button,
   fill: #ffffff;
 }
 
+.about-container {
+  padding: 0 124px;
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-bottom: 128px;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../../img/about-year.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 320px;
+  left: -93px;
+}
+
+.about__button {
+  background-color: transparent;
+  border: 1px solid #00b2ff;
+  color: #00b2ff;
+}
+
+.about__additional--hidden {
+  display: none;
+}
+
+.about__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+  margin-bottom: 15px;
+}
+
+.about__description {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  margin-bottom: 30px;
+}
+
+.about__description--mobile {
+  display: none;
+}
+
+.about__additional {
+  margin-top: 30px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1638,6 +1697,17 @@ button,
 
   .advantages__title {
     margin-top: 15px;
+  }
+
+  .about-container {
+    padding: 0;
+    padding-left: 225px;
+    max-width: 674px;
+    padding-bottom: 80px;
+  }
+
+  .about-container::before {
+    left: 23px;
   }
 }
 
@@ -1829,6 +1899,28 @@ button,
 
   .advantages__description {
     font-size: 14px;
+  }
+
+  .about-container {
+    padding: 0;
+    max-width: 270px;
+    padding-bottom: 92px;
+  }
+
+  .about-container::before {
+    background-image: none;
+  }
+
+  .about__button {
+    margin-top: 20px;
+  }
+
+  .about__description--desktop {
+    display: none;
+  }
+
+  .about__description--mobile {
+    display: inline;
   }
 }
 
