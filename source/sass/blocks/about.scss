@@ -1,8 +1,22 @@
 .about-container {
-    padding: 50px 124px;
+    padding: 0 124px;
     position: relative;
     max-width: 1220px;
-    margin:0 auto;
+    margin: 0 auto;
+    padding-bottom: 128px;
+
+    @include vp-1023 {
+        padding: 0;
+        padding-left: 225px;
+        max-width: 674px;
+        padding-bottom: 80px;
+    }
+
+    @include vp-767 {
+        padding: 0;
+        max-width: 270px;
+        padding-bottom: 92px;
+    }
 
 }
 
@@ -16,12 +30,25 @@
     height: 320px;
     left: -93px;
 
+    @include vp-1023 {
+        left: 23px;
+    }
+
+    @include vp-767 {
+        background-image: none;
+    }
+
+
 }
 
 .about__button {
     background-color: transparent;
     border: 1px solid $color-deep-sky-blue;
     color: $color-deep-sky-blue;
+
+    @include vp-767 {
+        margin-top: 20px;
+    }
 }
 
 .about__additional--hidden {
@@ -50,6 +77,21 @@
     margin-bottom: 30px;
 }
 
+.about__description--desktop {
+    @include vp-767 {
+        display: none;
+    }
+}
+
+.about__description--mobile {
+    display: none;
+
+    @include vp-767 {
+        display: inline;
+    }
+}
+
 .about__additional {
     margin-top: 30px;
 }
+

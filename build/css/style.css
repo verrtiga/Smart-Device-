@@ -1487,10 +1487,11 @@ button,
 }
 
 .about-container {
-  padding: 50px 124px;
+  padding: 0 124px;
   position: relative;
   max-width: 1220px;
   margin: 0 auto;
+  padding-bottom: 128px;
 }
 
 .about-container::before {
@@ -1534,6 +1535,10 @@ button,
   line-height: 22px;
   color: #041827;
   margin-bottom: 30px;
+}
+
+.about__description--mobile {
+  display: none;
 }
 
 .about__additional {
@@ -1692,6 +1697,17 @@ button,
 
   .advantages__title {
     margin-top: 15px;
+  }
+
+  .about-container {
+    padding: 0;
+    padding-left: 225px;
+    max-width: 674px;
+    padding-bottom: 80px;
+  }
+
+  .about-container::before {
+    left: 23px;
   }
 }
 
@@ -1883,6 +1899,28 @@ button,
 
   .advantages__description {
     font-size: 14px;
+  }
+
+  .about-container {
+    padding: 0;
+    max-width: 270px;
+    padding-bottom: 92px;
+  }
+
+  .about-container::before {
+    background-image: none;
+  }
+
+  .about__button {
+    margin-top: 20px;
+  }
+
+  .about__description--desktop {
+    display: none;
+  }
+
+  .about__description--mobile {
+    display: inline;
   }
 }
 
