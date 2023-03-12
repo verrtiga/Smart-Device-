@@ -12,7 +12,7 @@
     margin-right: 85px;
 
     @include vp-1023 {
-        margin:0;
+        margin: 0;
         margin-bottom: 30px;
     }
 }
@@ -36,13 +36,13 @@
     @include vp-767 {
         font-size: 28px;
         line-height: 39px;
-        padding:0;
+        padding: 0;
         padding: 0 25px;
     }
 }
 
 .catalog__title--desktop {
-    
+
     @include vp-767 {
         display: none;
     }
@@ -99,6 +99,9 @@
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
     width: 350px;
     height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-tablet.jpg");
@@ -118,6 +121,7 @@
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-desk.jpg");
     width: 350px;
     height: 650px;
+
 
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-tablet.jpg");

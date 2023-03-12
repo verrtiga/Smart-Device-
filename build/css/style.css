@@ -1606,6 +1606,8 @@ button,
   background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
   width: 350px;
   height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .catalog__card--install {
