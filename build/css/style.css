@@ -1545,6 +1545,101 @@ button,
   margin-top: 30px;
 }
 
+.catalog {
+  background-color: #041827;
+  padding-top: 58px;
+  padding-bottom: 100px;
+}
+
+.catalog__card {
+  position: relative;
+}
+
+.catalog__card:not(:last-child) {
+  margin-right: 85px;
+}
+
+.catalog__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  display: inline-block;
+  padding-left: 350px;
+  padding-bottom: 45px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.catalog__title--mobile {
+  display: none;
+}
+
+.catalog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.catalog__name {
+  position: absolute;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  top: 60px;
+  left: 41px;
+  color: #ffffff;
+}
+
+.catalog__card--production {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/production-catalog-desk.jpg");
+  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
+  width: 350px;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.catalog__card--install {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/installation-catalog-desk.jpg");
+  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-desk.jpg");
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-desk.jpg");
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__card--complect {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/accessories-catalog-desk.jpg");
+  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-desk.jpg");
+  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-desk.jpg");
+  width: 350px;
+  height: 650px;
+}
+
+.catalog__button {
+  width: 60px;
+  height: 60px;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  background-image: url(../../img/svg/arrow-catalog.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1708,6 +1803,44 @@ button,
 
   .about-container::before {
     left: 23px;
+  }
+
+  .catalog__card:not(:last-child) {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .catalog__title {
+    padding-left: 81px;
+  }
+
+  .catalog-container {
+    display: block;
+    padding: 0 50px;
+  }
+
+  .catalog__card--production {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/production-catalog-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-tablet.jpg");
+    width: 670px;
+    height: 250px;
+  }
+
+  .catalog__card--install {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/installation-catalog-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-tablet.jpg");
+    width: 670px;
+    height: 250px;
+  }
+
+  .catalog__card--complect {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/accessories-catalog-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-tablet.jpg");
+    width: 670px;
+    height: 250px;
   }
 }
 
@@ -1921,6 +2054,55 @@ button,
 
   .about__description--mobile {
     display: inline;
+  }
+
+  .catalog__title {
+    font-size: 28px;
+    line-height: 39px;
+    padding: 0;
+    padding: 0 25px;
+  }
+
+  .catalog__title--desktop {
+    display: none;
+  }
+
+  .catalog__title--mobile {
+    display: block;
+  }
+
+  .catalog-container {
+    padding: 0 25px;
+    margin-top: 40px;
+  }
+
+  .catalog__name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .catalog__card--production {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/production-catalog-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-mobile.jpg");
+    width: 270px;
+    height: 250px;
+  }
+
+  .catalog__card--install {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/installation-catalog-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-mobile.jpg");
+    width: 270px;
+    height: 250px;
+  }
+
+  .catalog__card--complect {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/accessories-catalog-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-mobile.jpg");
+    width: 270px;
+    height: 250px;
   }
 }
 
