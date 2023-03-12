@@ -1572,6 +1572,10 @@ button,
   margin: 0;
 }
 
+.catalog__title--mobile {
+  display: none;
+}
+
 .catalog-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2053,6 +2057,21 @@ button,
   .catalog__title {
     font-size: 28px;
     line-height: 39px;
+    padding: 0;
+    padding: 0 25px;
+  }
+
+  .catalog__title--desktop {
+    display: none;
+  }
+
+  .catalog__title--mobile {
+    display: block;
+  }
+
+  .catalog-container {
+    padding: 0 25px;
+    margin-top: 40px;
   }
 
   .catalog__name {

@@ -36,6 +36,23 @@
     @include vp-767 {
         font-size: 28px;
         line-height: 39px;
+        padding:0;
+        padding: 0 25px;
+    }
+}
+
+.catalog__title--desktop {
+    
+    @include vp-767 {
+        display: none;
+    }
+}
+
+.catalog__title--mobile {
+    display: none;
+
+    @include vp-767 {
+        display: block;
     }
 }
 
@@ -48,6 +65,11 @@
     @include vp-1023 {
         display: block;
         padding: 0 50px;
+    }
+
+    @include vp-767 {
+        padding: 0 25px;
+        margin-top: 40px;
     }
 
 }
