@@ -172,20 +172,23 @@
         <div class=" fieldset-data">
           <ul class="fieldset-data__list">
             <li class="fieldset-data__item">
-              <input class="fieldset-data__input" type="text" minlength="1" placeholder="Имя" required>
+              <input class="custom-input fieldset-data__input" type="text" minlength="1" placeholder="Имя" required>
             </li>
             <li class="fieldset-data__item">
-              <input class="fieldset-data__input" type="text" minlength="1" placeholder="Телефон" required>
+              <input class="custom-input fieldset-data__input" type="text" minlength="1" placeholder="Телефон" required>
             </li>
-            <li class="fieldset-data__item">
-              <textarea class="fieldset-data__textarea" name="ask" placeholder="Ваш вопрос"></textarea>
+            <li class="fieldset-data__item fieldset-data__item--comment">
+              <textarea class="custom-textarea fieldset-data__textarea" name="ask" placeholder="Ваш вопрос"></textarea>
             </li>
           </ul>
         </div>
         <div class="form-ask-container">
           <button class="btn form-ask__button" type="submit">Задать вопрос</button>
-          <input class="form-ask__checkbox" type="checkbox" required>
-          <span class="form-ask__data">Я согласен на обработку<br>персональных данных</span>
+          <label class="form-ask__label">
+          <input class="form-ask__checkbox visually-hidden" type="checkbox" required>
+           <span class="form-ask__control"></span>
+          <p class="form-ask__data">Я согласен на обработку<br>персональных данных</p>
+          </label>
         </div>
       </form>
       </div>
