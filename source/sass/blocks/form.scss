@@ -1,0 +1,224 @@
+.form {
+    min-height: 542px;
+    background: linear-gradient(-53deg, rgba(0, 178, 255, 1) 75%, rgba(14, 85, 122, 1) 75%);
+    position: relative;
+
+    @include vp-1023 {
+        background: linear-gradient(-53deg, rgba(0, 178, 255, 1) 75%, rgba(0, 178, 255, 1) 75%);
+    }
+
+    @include vp-767 {
+        min-height: 750px;
+    }
+}
+
+.form-container {
+    margin-bottom: 35px;
+    ;
+}
+
+.fieldset-data {
+    margin-bottom: 35px;
+}
+
+.form__img {
+    position: absolute;
+    left: 190px;
+    top: 150px;
+
+    @include vp-1023 {
+        display: none;
+    }
+}
+
+.fieldset-container {
+    width: 585px;
+    height: 420px;
+    margin-left: auto;
+    margin-right: 170px;
+    padding-top: 54px;
+
+    @include vp-1023 {
+        padding: 0 50px;
+        width: 770px;
+        padding-top: 50px;
+    }
+
+    @include vp-767 {
+        width: 320px;
+        padding: 50px 25px;
+    }
+
+}
+
+.form__title {
+    font-family: $ff-robotocond;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $color-default-white;
+    margin: 0;
+    margin-bottom: 15px;
+
+    @include vp-767 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+.form__description {
+    margin: 0;
+    font-family: $ff-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+
+    @include vp-767 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.form-ask__data {
+    font-family: $ff-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+    opacity: 0.8;
+    display: block;
+    width: 320px;
+    margin: 0;
+    padding-left: 45px;
+
+    @include vp-767 {
+        width: 234px;
+        padding-left: 28px;
+    }
+}
+
+.fieldset-data__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+    @include vp-767 {
+        display: block;
+    }
+}
+
+.fieldset-data__item {
+    font-family: $ff-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+    margin-bottom: 20px;
+}
+
+.fieldset-data__item--comment {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.fieldset-data__input {
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: 0;
+    width: 270px;
+    padding: 15px;
+    outline: none;
+    color: $color-default-white;
+
+    @include vp-1023 {
+        width: 320px;
+    }
+
+    @include vp-767 {
+        width: 270px;
+    }
+}
+
+.fieldset-data__input::placeholder {
+    color: $color-default-white;
+}
+
+
+.fieldset-data__textarea {
+    background: rgba(4, 20, 39, 0.15);
+    border: 0;
+    border-radius: 3px;
+    padding: 15px 25px;
+    width: 580px;
+    height: 155px;
+    outline: none;
+    color: $color-default-white;
+
+    @include vp-1023 {
+        width: 655px;
+    }
+}
+
+.fieldset-data__textarea::placeholder {
+    color: $color-default-white;
+}
+
+.form-ask-container {
+    display: flex;
+    align-items: center;
+
+    @include vp-767 {
+        display: block;
+    }
+}
+
+.form-ask__button {
+    width: 265px;
+    border-radius: 3px;
+    padding: 15px 73px;
+}
+
+.form-ask__control {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $color-default-white;
+    left: 20px;
+
+    @include vp-767 {
+        left: -84px;
+        top: 28px;
+        right: 0;
+        bottom: 0;
+
+    }
+}
+
+.form-ask__label {
+    position: relative;
+
+    @include vp-1023 {
+        margin-left: 85px;
+    }
+}
+
+.form-ask__checkbox[type="checkbox"]:checked+.form-ask__control::before,
+.form-ask__checkbox[type="checkbox"]:checked+.form-ask__control::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/svg/check-icon.svg);
+    background-repeat: no-repeat;
+    top: 3px;
+    left: 2px;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+}
