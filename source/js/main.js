@@ -82,6 +82,14 @@ button.addEventListener("click", () => {
   }
 });
 
+const link = document.querySelector('.hero__button');
+
+link.addEventListener('click', function(e) {
+  e.preventDefault();
+  const forma = document.querySelector('#forma');
+  forma.scrollIntoView({ behavior: 'smooth' });
+});
+
 
 
 
