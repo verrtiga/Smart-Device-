@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Device</title>
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="">
@@ -15,12 +15,12 @@
 
 <body>
   <header class="header">
-    <div class="navigation-container">
-      <div class="navigation-wrapper">
-        <a class="navigation__link" href="index.html">
+    <div class="header-container">
+      <div class="header-wrapper">
+        <a class="header__link" href="index.html">
           <picture>
             <source media="(max-width: 768px)" srcset="./img/svg/logo-mobile.svg">
-            <img class="navigation__logo" src="./img/svg/logo-desktop.svg" width="215" height="55"
+            <img class="header__logo" src="./img/svg/logo-desktop.svg" width="215" height="55"
               alt="Логотип Smart Device">
           </picture>
         </a>
@@ -30,7 +30,7 @@
           <li class="navigation__item">
             <a class="navigation__link" href="info$sd.ru">
               <svg class="navigation__icon" width="21" height="20" fill="none">
-                <use href="img/sprite/sprite.svg#nav-mail">
+                <use href="img/sprite/sprite.svg#nav-mail"></use>
               </svg>
               <span class="navigation__span navigation__span--hidden">info@sd.ru</span>
             </a>
@@ -67,7 +67,7 @@
           <li class="advantages__item">
             <div class="advantages__item-container">
               <svg class="advantages__icon" width="35" height="35">
-                <use href="./img/sprite/sprite.svg#time">
+                <use href="./img/sprite/sprite.svg#time"></use>
               </svg>
               <h3 class="advantages__title">Оперативные сроки</h3>
               <p class="advantages__description">Усовершенствованная логистическая система позволяет нам просчитывать
@@ -77,7 +77,7 @@
           <li class="advantages__item">
             <div class="advantages__item-container">
               <svg class="advantages__icon" width="35" height="35">
-                <use href="./img/sprite/sprite.svg#hired">
+                <use href="./img/sprite/sprite.svg#hired"></use>
               </svg>
               <h3 class="advantages__title">Крупные поставщики</h3>
               <p class="advantages__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM,
@@ -89,7 +89,7 @@
           <li class="advantages__item">
             <div class="advantages__item-container">
               <svg class="advantages__icon" width="35" height="35" viewBox="0 0 35 35">
-                <use href="./img/sprite/sprite.svg#detective">
+                <use href="./img/sprite/sprite.svg#detective"></use>
               </svg>
               <h3 class="advantages__title">Полная конфиденциальность</h3>
               <p class="advantages__description">По желанию клиента мы обеспечиваем полную конфиденциальность.
@@ -99,7 +99,7 @@
           <li class="advantages__item">
             <div class="advantages__item-container">
               <svg class="advantages__icon" width="35" height="35">
-                <use href="./img/sprite/sprite.svg#price">
+                <use href="./img/sprite/sprite.svg#price"></use>
               </svg>
               <h3 class="advantages__title">Персонализация стоимости</h3>
               <p class="advantages__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
@@ -137,7 +137,7 @@
     <section class="catalog">
       <h2 class="catalog__title">
         <span class="catalog__title catalog__title--desktop">
-        Smart Device предлагает следующие товары и услуги
+          Smart Device предлагает следующие товары и услуги
         </span>
         <span class="catalog__title catalog__title--mobile">
           Товары и услуги Smart Device
@@ -145,24 +145,52 @@
       </h2>
       <div class="catalog-container">
         <article class="catalog__card catalog__card--production">
-          <a class="catalog__link" href="#">
-          <h3 class="catalog__name">Производство<br>печатных плат</h3>
-          <button class="btn catalog__button" type="button"></button>
-          </a>
+            <h3 class="catalog__name">Производство<br>печатных плат</h3>
+            <button class="btn catalog__button" type="button"></button>
         </article>
         <article class="catalog__card catalog__card--install">
-          <a class="catalog__link" href="#">
-          <h3 class="catalog__name">Монтаж печатных<br>плат</h3>
-          <button class="btn catalog__button" type="button"></button>
-          </a>
+            <h3 class="catalog__name">Монтаж печатных<br>плат</h3>
+            <button class="btn catalog__button" type="button"></button>
         </article>
         <article class="catalog__card catalog__card--complect">
-          <a class="catalog__link" href="#">
-          <h3 class="catalog__name">Комплектующие<br>для светотехники</h3>
-          <button class="btn catalog__button" type="button"></button>
-          </a>
+            <h3 class="catalog__name">Комплектующие<br>для светотехники</h3>
+            <button class="btn catalog__button" type="button"></button>
+        </article>
       </div>
     </section>
+    <section class="form">
+      <picture>
+        <img class="form__img" src="img/form-airplane-desk.png" width="510" height="265"
+          alt="Изображение бумажного самолета.">
+      </picture>
+      <div class="fieldset-container">
+      <div class=" form-container">
+        <h2 class="form__title"> Остались вопросы? Задайте их нам! </h2>
+        <p class="form__description">Мы проконсультируем Вас бесплатно</p>
+      </div>
+      <form class="form-ask" action="https://echo.htmlacademy.ru/courses" method="get" name="Ask">
+        <div class=" fieldset-data">
+          <ul class="fieldset-data__list">
+            <li class="fieldset-data__item">
+              <input class="fieldset-data__input" type="text" minlength="1" placeholder="Имя" required>
+            </li>
+            <li class="fieldset-data__item">
+              <input class="fieldset-data__input" type="text" minlength="1" placeholder="Телефон" required>
+            </li>
+            <li class="fieldset-data__item">
+              <textarea class="fieldset-data__textarea" name="ask" placeholder="Ваш вопрос"></textarea>
+            </li>
+          </ul>
+        </div>
+        <div class="form-ask-container">
+          <button class="btn form-ask__button" type="submit">Задать вопрос</button>
+          <input class="form-ask__checkbox" type="checkbox" required>
+          <span class="form-ask__data">Я согласен на обработку<br>персональных данных</span>
+        </div>
+      </form>
+      </div>
+    </section>
+
   </main>
   <footer class="footer">
     <div class="footer__block footer__block--social">
@@ -175,7 +203,7 @@
         <li class="footer__item">
           <a class="footer__link" href="#">
             <svg class="footer__icon" width="30" height="30" fill="none">
-              <use href="img/sprite/sprite.svg#ok">
+              <use href="img/sprite/sprite.svg#ok"></use>
             </svg>
             <span class="visually-hidden">Одноклассиники.</span>
           </a>
@@ -183,7 +211,7 @@
         <li class="footer__item">
           <a class="footer__link" href="#">
             <svg class="footer__icon" width="30" height="30" fill="none">
-              <use href="img/sprite/sprite.svg#vk">
+              <use href="img/sprite/sprite.svg#vk"></use>
             </svg>
             <span class="visually-hidden">Вконтакте.</span>
           </a>
@@ -191,7 +219,7 @@
         <li class="footer__item">
           <a class="footer__link" href="#">
             <svg class="footer__icon" width="30" height="30" fill="none">
-              <use href="img/sprite/sprite.svg#pinter">
+              <use href="img/sprite/sprite.svg#pinter"></use>
             </svg>
             <span class="visually-hidden">Пинтерест.</span>
           </a>
