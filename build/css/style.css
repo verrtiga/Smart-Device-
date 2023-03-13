@@ -2038,6 +2038,33 @@ button,
     width: 670px;
     height: 250px;
   }
+
+  .form {
+    background: -o-linear-gradient(143deg, rgb(0, 178, 255) 75%, rgb(0, 178, 255) 75%);
+    background: linear-gradient(-53deg, rgb(0, 178, 255) 75%, rgb(0, 178, 255) 75%);
+  }
+
+  .form__img {
+    display: none;
+  }
+
+  .fieldset-container {
+    padding: 0 50px;
+    width: 770px;
+    padding-top: 50px;
+  }
+
+  .fieldset-data__input {
+    width: 320px;
+  }
+
+  .fieldset-data__textarea {
+    width: 655px;
+  }
+
+  .form-ask__label {
+    margin-left: 85px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
@@ -2300,12 +2327,54 @@ button,
     width: 270px;
     height: 250px;
   }
+
+  .form {
+    min-height: 750px;
+  }
+
+  .fieldset-container {
+    width: 320px;
+    padding: 50px 25px;
+  }
+
+  .form__title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form__description {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .form-ask__data {
+    width: 234px;
+    padding-left: 28px;
+  }
+
+  .fieldset-data__list {
+    display: block;
+  }
+
+  .fieldset-data__input {
+    width: 270px;
+  }
+
+  .form-ask-container {
+    display: block;
+  }
+
+  .form-ask__control {
+    left: -84px;
+    top: 28px;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .custom-input,
   .custom-textarea {
-    padding: 4px 0 48px;
     width: 100%;
   }
 
