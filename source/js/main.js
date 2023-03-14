@@ -69,6 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Получаем ссылки на кнопку и модальное окно
     const modalButton = document.querySelector(".btn--navigation");
     const modal = document.querySelector(".modal");
+    const inputName = document.getElementById("Name");
 
     // Получаем ссылку на элемент для закрытия модального окна
     const closeButton = modal.querySelector(".modal__close-btn");
@@ -79,6 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Добавляем обработчик на кнопку
     modalButton.addEventListener("click", function () {
       modal.classList.add('is-active');
+      inputName.focus();
     });
 
     // Добавляем обработчик на кнопку закрытия
