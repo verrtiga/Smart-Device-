@@ -33,6 +33,10 @@
     color: $color-alice-blue;
 }
 
+.navigation__link:hover {
+    opacity: 0.5;
+}
+
 .navigation__item--button {
     @include vp-1023 {
         display: none;
