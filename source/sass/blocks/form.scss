@@ -156,6 +156,10 @@
     }
 }
 
+.fieldset-data__input:hover {
+    border-color: $color-black-pearl;
+}
+
 .fieldset-data__input--modal {
     width: 100%;
 }

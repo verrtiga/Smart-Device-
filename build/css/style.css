@@ -823,20 +823,6 @@ button,
   transition: border 0.3s ease;
 }
 
-.custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
-
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
-}
-
 .custom-input__error,
 .custom-textarea__error {
   position: absolute;
@@ -933,6 +919,10 @@ button,
   font-size: 16px;
   line-height: 18px;
   color: #f2f5f6;
+}
+
+.navigation__link:hover {
+  opacity: 0.5;
 }
 
 .navigation__item:not(:last-child) {
@@ -1073,6 +1063,8 @@ button,
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/main-background-desktop.jpg");
   background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop.jpg");
   background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop.jpg");
+  background-size: cover;
+  background-color: #041827;
   width: 100%;
   height: 900px;
   position: absolute;
@@ -1320,6 +1312,7 @@ button,
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/production-catalog-desk.jpg");
   background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
   background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
+  background-color: #00b2ff;
   width: 350px;
   height: 650px;
   background-size: cover;
@@ -1330,6 +1323,7 @@ button,
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/installation-catalog-desk.jpg");
   background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-desk.jpg");
   background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-desk.jpg");
+  background-color: #00b2ff;
   width: 350px;
   height: 650px;
 }
@@ -1338,6 +1332,7 @@ button,
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/accessories-catalog-desk.jpg");
   background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-desk.jpg");
   background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-desk.jpg");
+  background-color: #00b2ff;
   width: 350px;
   height: 650px;
 }
@@ -1474,6 +1469,10 @@ button,
   padding: 15px;
   outline: none;
   color: #ffffff;
+}
+
+.fieldset-data__input:hover {
+  border-color: #041827;
 }
 
 .fieldset-data__input--modal {
@@ -1769,6 +1768,7 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/production-catalog-tablet.jpg");
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-tablet.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-tablet.jpg");
+    background-color: #00b2ff;
     width: 670px;
     height: 250px;
   }
@@ -1777,6 +1777,7 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/installation-catalog-tablet.jpg");
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-tablet.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-tablet.jpg");
+    background-color: #00b2ff;
     width: 670px;
     height: 250px;
   }
@@ -1785,6 +1786,7 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/accessories-catalog-tablet.jpg");
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-tablet.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-tablet.jpg");
+    background-color: #00b2ff;
     width: 670px;
     height: 250px;
   }
@@ -2058,6 +2060,7 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/production-catalog-mobile.jpg");
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-mobile.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-mobile.jpg");
+    background-color: #00b2ff;
     width: 270px;
     height: 250px;
   }
@@ -2066,6 +2069,7 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/installation-catalog-mobile.jpg");
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-mobile.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-mobile.jpg");
+    background-color: #00b2ff;
     width: 270px;
     height: 250px;
   }
@@ -2074,6 +2078,7 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../../img/accessories-catalog-mobile.jpg");
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-mobile.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-mobile.jpg");
+    background-color: #00b2ff;
     width: 270px;
     height: 250px;
   }

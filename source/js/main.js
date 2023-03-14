@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Mask-input 
 
-  let parent = document.querySelector(".input-group");
+  let parent = document.querySelector('.input-group');
 
   initPhoneInput(parent);
 
@@ -35,16 +35,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // About-additional
 
-  const button = document.querySelector(".about__button");
-  const details = document.querySelector(".about__additional");
+  const button = document.querySelector('.about__button');
+  const details = document.querySelector('.about__additional');
 
-  button.addEventListener("click", () => {
-    if (details.classList.contains("about__additional--hidden")) {
-      details.classList.remove("about__additional--hidden");
-      button.textContent = "Свернуть";
+  button.addEventListener('click', () => {
+    if (details.classList.contains('about__additional--hidden')) {
+      details.classList.remove('about__additional--hidden');
+      button.textContent = 'Свернуть';
     } else {
-      details.classList.add("about__additional--hidden");
-      button.textContent = "Подробнее";
+      details.classList.add('about__additional--hidden');
+      button.textContent = 'Подробнее';
     }
   });
 
@@ -67,29 +67,60 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('load', () => {
     // Получаем ссылки на кнопку и модальное окно
-    const modalButton = document.querySelector(".btn--navigation");
-    const modal = document.querySelector(".modal");
-    const inputName = document.getElementById("Name");
+    const modalButton = document.querySelector('.btn--navigation');
+    const modal = document.querySelector('.modal');
+    const inputName = document.getElementById('Name');
+    const modalOverlay = document.querySelector('.modal__overlay');
 
     // Получаем ссылку на элемент для закрытия модального окна
-    const closeButton = modal.querySelector(".modal__close-btn");
+    const closeButton = modal.querySelector('.modal__close-btn');
 
     // Инициализируем модальное окно
     initModals();
 
     // Добавляем обработчик на кнопку
-    modalButton.addEventListener("click", function () {
+    modalButton.addEventListener('click', function () {
       modal.classList.add('is-active');
       inputName.focus();
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      // добавляем стиль к <body>, который запрещает прокрутку
+      document.body.style.overflow = 'hidden';
+
+      // устанавливаем позицию прокрутки обратно на сохраненные значения
+      window.onscroll = function () {
+        window.scrollTo(scrollLeft, scrollTop);
+      };
+
     });
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      document.body.style.overflow = '';
+      window.onscroll = null;
+    }
 
     // Добавляем обработчик на кнопку закрытия
-    closeButton.addEventListener("click", function () {
+    closeButton.addEventListener('click', function () {
       // Закрываем модальное окно
-      modal.classList.remove('is-active');
+      closeModal();
+
     });
 
-    let parent = modal.querySelector(".input-group");
+    // Обработчик события, который закрывает модальное окно при нажатии на клавишу ESC
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+    
+    modalOverlay.addEventListener('click', function () {
+      closeModal();
+    })
+    
+
+    let parent = modal.querySelector('.input-group');
 
     initPhoneInput(parent);
 
@@ -100,29 +131,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // ---------------------------------
-
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
-
-// привязывайте js не на классы, а на дата атрибуты (data-validate)
-
-// вместо модификаторов .block--active используем утилитарные классы
-// .is-active || .is-open || .is-invalid и прочие (обязателен нейминг в два слова)
-// .select.select--opened ❌ ---> [data-select].is-open ✅
-
-// выносим все в дата атрибуты
-// url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
-
-// для адаптивного JS используется matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
-
-// используйте .closest(el)
 
 
 
