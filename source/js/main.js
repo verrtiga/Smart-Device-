@@ -89,6 +89,10 @@ window.addEventListener('DOMContentLoaded', () => {
       modal.classList.remove('is-active');
     });
 
+    let parent = modal.querySelector(".input-group");
+
+    initPhoneInput(parent);
+
     const form = new Form();
     window.form = form;
     form.init();
