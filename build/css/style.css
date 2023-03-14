@@ -1426,6 +1426,11 @@ button,
   padding-left: 45px;
 }
 
+.form-ask__data--modal {
+  width: 100%;
+  margin-top: 20px;
+}
+
 .fieldset-data__list {
   list-style-type: none;
   margin: 0;
@@ -1471,6 +1476,10 @@ button,
   color: #ffffff;
 }
 
+.fieldset-data__input--modal {
+  width: 100%;
+}
+
 .fieldset-data__input::-webkit-input-placeholder {
   color: #ffffff;
 }
@@ -1502,6 +1511,10 @@ button,
   color: #ffffff;
 }
 
+.fieldset-data__textarea--modal {
+  width: 100%;
+}
+
 .fieldset-data__textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
@@ -1531,10 +1544,20 @@ button,
   align-items: center;
 }
 
+.form-ask-container--modal {
+  display: block;
+}
+
 .form-ask__button {
   width: 265px;
   border-radius: 3px;
   padding: 15px 73px;
+}
+
+.form-ask__button--modal {
+  width: 100%;
+  padding: 15px 0;
+  padding-left: 220px;
 }
 
 .form-ask__control {
@@ -1543,6 +1566,11 @@ button,
   height: 15px;
   border: 1px solid #ffffff;
   left: 20px;
+}
+
+.form-ask__control--modal {
+  left: -500px;
+  top: 53px;
 }
 
 .form-ask__label {

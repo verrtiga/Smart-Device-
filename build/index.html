@@ -183,11 +183,11 @@
                     <span class="input-message"></span>
                   </div>
                 </div>
-          </li>
-          <li class="fieldset-data__item fieldset-data__item--comment">
-            <textarea class="custom-textarea fieldset-data__textarea" placeholder="Ваш вопрос"></textarea>
-          </li>
-          </ul>
+              </li>
+              <li class="fieldset-data__item fieldset-data__item--comment">
+                <textarea class="custom-textarea fieldset-data__textarea" placeholder="Ваш вопрос"></textarea>
+              </li>
+            </ul>
           </div>
           <div class="form-ask-container">
             <button class="btn form-ask__button" type="submit">Задать вопрос</button>
@@ -299,55 +299,55 @@
   </footer>
 
 
-  
-  <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <div class="modal-container">
-            <div class=" form-container">
-              <h2 class="form__title"> Закажите звонок </h2>
-              <p class="form__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-            </div>
-            <form class="form-ask" action="https://echo.htmlacademy.ru/courses" method="get" name="Modal-form">
-              <div class=" fieldset-data">
-                <ul class="fieldset-data__list fieldset-data__list--modal">
-                  <li class="fieldset-data__item">
-                    <input class="custom-input fieldset-data__input" type="text" minlength="1" placeholder="Имя" required>
-                  </li>
-                  <li class="fieldset-data__item">
-                    <div class="input-group" data-validate-type="phone" data-required>
-                      <div class="input-wrapper">
-                        <input class="custom-input fieldset-data__input" data-validate-field="tel" type="tel" id="phone-modal"
-                          placeholder="Телефон" required>
-                        <span class="input-icon"></span>
-                        <span class="input-message"></span>
-                      </div>
-                    </div>
-              </li>
-              <li class="fieldset-data__item fieldset-data__item--comment">
-                <textarea class="custom-textarea fieldset-data__textarea" placeholder="Ваш вопрос"></textarea>
-              </li>
-              </ul>
-              </div>
-              <div class="form-ask-container">
-                <button class="btn form-ask__button" type="submit">Задать вопрос</button>
-                <label class="form-ask__label">
-                  <input class="form-ask__checkbox visually-hidden" type="checkbox" name="Personal data" required>
-                  <span class="form-ask__control"></span>
-                  <span class="form-ask__data">Я согласен на обработку<br>персональных данных</span>
-                </label>
-              </div>
-            </form>
+
+  <div class="modal modal--preload is-active" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <div class="modal-container">
+          <div class=" form-container">
+            <h2 class="form__title form__title--modal"> Закажите звонок </h2>
+            <p class="form__description form__description--modal">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           </div>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+          <form class="form-ask" action="https://echo.htmlacademy.ru/courses" method="get" name="Modal-form">
+            <div class=" fieldset-data">
+              <ul class="fieldset-data__list fieldset-data__list--modal">
+                <li class="fieldset-data__item">
+                  <input class="custom-input fieldset-data__input fieldset-data__input--modal" type="text" minlength="1" placeholder="Имя" required>
+                </li>
+                <li class="fieldset-data__item">
+                  <div class="input-group" data-validate-type="phone" data-required>
+                    <div class="input-wrapper">
+                      <input class="custom-input fieldset-data__input fieldset-data__input--modal" data-validate-field="tel" type="tel"
+                        id="phone-modal" placeholder="Телефон" required>
+                      <span class="input-icon"></span>
+                      <span class="input-message"></span>
+                    </div>
+                  </div>
+                </li>
+                <li class="fieldset-data__item fieldset-data__item--comment">
+                  <textarea class="custom-textarea fieldset-data__textarea fieldset-data__textarea--modal" placeholder="Ваш вопрос"></textarea>
+                </li>
+              </ul>
+            </div>
+            <div class="form-ask-container form-ask-container--modal">
+              <button class="btn form-ask__button form-ask__button--modal" type="submit">Отправить</button>
+              <label class="form-ask__label">
+                <input class="form-ask__checkbox visually-hidden" type="checkbox" name="Personal data" required>
+                <span class="form-ask__control form-ask__control--modal"></span>
+                <span class="form-ask__data form-ask__data--modal">Я согласен на обработку персональных данных</span>
+              </label>
+            </div>
+          </form>
         </div>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
