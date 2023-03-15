@@ -1031,6 +1031,10 @@ button,
   color: #15ab07;
 }
 
+.navigation {
+  margin-left: 100px;
+}
+
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,6 +1115,11 @@ button,
   font-size: 16px;
   line-height: 18px;
   color: #f2f5f6;
+}
+
+.header__logo {
+  min-height: 55px;
+  min-width: 215px;
 }
 
 .footer {
@@ -1686,14 +1695,6 @@ button,
   padding-top: 54px;
 }
 
-.form-ask::after {
-  content: "";
-  width: 510px;
-  height: 285px;
-  position: absolute;
-  background-image: url("../../img/form-airplane-desk.png");
-}
-
 .form-ask__data--modal {
   width: 100%;
   margin-top: 20px;
@@ -2017,13 +2018,17 @@ button,
     padding-left: 28px;
   }
 
+  .navigation {
+    margin: 0;
+  }
+
   .header-container {
     padding: 30px 24px;
   }
 
   .header__logo {
-    width: 35px;
-    height: 35px;
+    width: 0;
+    height: 0;
   }
 
   .footer {
