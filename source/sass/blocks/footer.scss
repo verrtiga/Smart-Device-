@@ -109,10 +109,15 @@
 .footer__icon {
     margin: 20px;
     margin-top: 0;
+    fill: $color-default-white;
+}
+
+.footer__icon:hover {
+    fill: $color-deep-sky-blue;
 }
 
 .footer__link:hover {
-    color: #333;
+    color: $color-black-pearl;
 }
 
 @include vp-767 {

@@ -159,6 +159,15 @@
   color: $color-default-white;
 }
 
+.fieldset-data-modal input:hover {
+  outline: 1px solid $color-default-white;
+}
+
+.fieldset-data-modal input:focus {
+  outline: 2px solid $color-default-white;
+}
+
+
 .fieldset-data-modal textarea {
   background: rgba(4, 20, 39, 0.15);
   border: 0;
@@ -176,6 +185,14 @@
 
 .fieldset-data-modal textarea::placeholder {
   color: $color-default-white;
+}
+
+.fieldset-data-modal textarea:hover {
+  outline: 1px solid $color-default-white;
+}
+
+.fieldset-data-modal textarea:focus {
+  outline: 2px solid $color-default-white;
 }
 
 .form-container-modal h2 {
