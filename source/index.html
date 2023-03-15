@@ -114,24 +114,24 @@
     </section>
     <section class="about">
       <div class="about-container">
-        <h2 class="about__title">О компании</h2>
-        <p class="about__description">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы
+        <h2>О компании</h2>
+        <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы
           и&nbsp;предоставляем
           мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы
           до&nbsp;10&nbsp;дней. </p>
-        <p class="about__description about__description--desktop"> Наши поставщики&nbsp;&mdash; мировые производители
+        <p class="about__desktop"> Наши поставщики&nbsp;&mdash; мировые производители
           электронных
           компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
           платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД),
           РоссАвтоПрома
           (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
         </p>
-        <p class="about__description about__description--mobile"> Наши поставщики&nbsp;&mdash; мировые производители
+        <p class="about__mobile"> Наши поставщики&nbsp;&mdash; мировые производители
           электронных
           компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
         <button class="btn about__button" type="button">Подробнее</button>
         <div class="about__additional about__additional--hidden">
-          <p class="about__description">Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
+          <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
             1&nbsp;000&nbsp;000
             клиентов,
             70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более
@@ -174,37 +174,31 @@
       </picture>
       <div class="fieldset-container">
         <div class=" form-container">
-          <h2 class="form__title"> Остались вопросы? Задайте их&nbsp;нам! </h2>
-          <p class="form__description">Мы&nbsp;проконсультируем Вас бесплатно</p>
+          <h2> Остались вопросы? Задайте их&nbsp;нам! </h2>
+          <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
         </div>
         <form class="form-ask" action="https://echo.htmlacademy.ru" method="get" name="Ask">
           <div class=" fieldset-data">
-            <ul class="fieldset-data__list">
-              <li class="fieldset-data__item">
-                <input class="custom-input fieldset-data__input" type="text" minlength="1" placeholder="Имя" name="Name"
-                  required>
+            <ul>
+              <li>
+                <input type="text" minlength="1" placeholder="Имя" name="Name" required>
               </li>
-              <li class="fieldset-data__item">
+              <li>
                 <div class="input-group" data-validate-type="phone" data-required>
-                  <div class="input-wrapper">
-                    <input class="custom-input fieldset-data__input" data-validate-field="tel" name="Phone" type="tel"
-                      id="phone" placeholder="Телефон" required>
-                    <span class="input-icon"></span>
-                    <span class="input-message"></span>
-                  </div>
+                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" required>
                 </div>
               </li>
-              <li class="fieldset-data__item fieldset-data__item--comment">
-                <textarea class="custom-textarea fieldset-data__textarea" placeholder="Ваш вопрос" name="Question"></textarea>
+              <li class="fieldset-data__item--comment">
+                <textarea placeholder="Ваш вопрос" name="Question"></textarea>
               </li>
             </ul>
           </div>
           <div class="form-ask-container">
-            <button class="btn form-ask__button" type="submit">Задать вопрос</button>
-            <label class="form-ask__label">
+            <button class="btn" type="submit">Задать вопрос</button>
+            <label>
               <input class="form-ask__checkbox visually-hidden" type="checkbox" name="Personal data" required>
               <span class="form-ask__control"></span>
-              <span class="form-ask__data">Я согласен на обработку<br>персональных данных</span>
+              <p>Я согласен на обработку<br>персональных данных</p>
             </label>
           </div>
         </form>
@@ -315,41 +309,35 @@
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
         <div class="modal-container">
-          <div class=" form-container">
+          <div class="form-container-modal">
             <h2 class="form__title form__title--modal"> Закажите звонок </h2>
             <p class="form__description form__description--modal">Оставьте контакты, мы проконсультируем вас бесплатно в
               удобное время</p>
           </div>
           <form class="form-ask" action="https://echo.htmlacademy.ru/courses" method="get" name="Modal-form">
-            <div class="fieldset-data">
-              <ul class="fieldset-data__list fieldset-data__list--modal">
-                <li class="fieldset-data__item">
-                  <input class="custom-input fieldset-data__input fieldset-data__input--modal" name="Name" type="text"
-                    minlength="1" placeholder="Имя" id="Name" aria-label="Имя пользователя." required>
+            <div class="fieldset-data-modal">
+              <ul>
+                <li>
+                  <input name="Name" type="text" minlength="1" placeholder="Имя" id="Name"
+                    aria-label="Имя пользователя." required>
                 </li>
-                <li class="fieldset-data__item">
+                <li>
                   <div class="input-group" data-validate-type="phone" data-required>
-                    <div class="input-wrapper">
-                      <input class="custom-input fieldset-data__input fieldset-data__input--modal"
-                        data-validate-field="tel" type="tel" id="phone-modal" placeholder="Телефон"
-                        aria-label="Номер телефона." name="Phone" required>
-                      <span class="input-icon"></span>
-                      <span class="input-message"></span>
-                    </div>
+                    <input data-validate-field="tel" type="tel" id="phone-modal" placeholder="Телефон"
+                      aria-label="Номер телефона." name="Phone" required>
                   </div>
                 </li>
-                <li class="fieldset-data__item fieldset-data__item--comment">
-                  <textarea class="custom-textarea fieldset-data__textarea fieldset-data__textarea--modal"
-                    placeholder="Ваш вопрос" name="Question"></textarea>
+                <li>
+                  <textarea placeholder="Ваш вопрос" name="Question"></textarea>
                 </li>
               </ul>
             </div>
-            <div class="form-ask-container form-ask-container--modal">
-              <button class="btn form-ask__button form-ask__button--modal" type="submit">Отправить</button>
-              <label class="form-ask__label">
+            <div class="form-ask-container-modal">
+              <button class="btn" type="submit">Отправить</button>
+              <label>
                 <input class="form-ask__checkbox visually-hidden" type="checkbox" name="Personal data" required>
                 <span class="form-ask__control form-ask__control--modal"></span>
-                <span class="form-ask__data form-ask__data--modal">Я согласен на обработку персональных данных</span>
+                <p>Я согласен на обработку персональных данных</p>
               </label>
             </div>
           </form>

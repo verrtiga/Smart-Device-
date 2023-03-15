@@ -783,6 +783,139 @@ button,
   pointer-events: auto;
 }
 
+.form-container-modal {
+  margin-bottom: 35px;
+}
+
+.fieldset-data-modal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.fieldset-data-modal li {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.fieldset-data-modal input {
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  color: #ffffff;
+}
+
+.fieldset-data-modal input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal input::placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal textarea {
+  background: rgba(4, 20, 39, 0.15);
+  border: 0;
+  border-radius: 3px;
+  padding: 15px 25px;
+  width: 100%;
+  height: 155px;
+  outline: none;
+  color: #ffffff;
+}
+
+.fieldset-data-modal textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data-modal textarea::placeholder {
+  color: #ffffff;
+}
+
+.form-container-modal h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.form-container-modal p {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form-ask-container-modal {
+  display: block;
+}
+
+.form-ask-container-modal button {
+  width: 100%;
+  padding: 15px 0;
+  padding-left: 220px;
+}
+
+.form-ask-container-modal p {
+  width: 100%;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  padding-left: 45px;
+}
+
+.form-ask__control--modal {
+  left: 53px;
+  top: 570px;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -1223,7 +1356,7 @@ button,
   display: none;
 }
 
-.about__title {
+.about-container h2 {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1234,7 +1367,7 @@ button,
   margin-bottom: 15px;
 }
 
-.about__description {
+.about p {
   margin: 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -1245,7 +1378,7 @@ button,
   margin-bottom: 30px;
 }
 
-.about__description--mobile {
+.about__mobile {
   display: none;
 }
 
@@ -1368,8 +1501,136 @@ button,
   margin-bottom: 35px;
 }
 
+.form-container h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.form-container p {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
 .fieldset-data {
   margin-bottom: 35px;
+}
+
+.fieldset-data ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.fieldset-data li {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.fieldset-data input {
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: 0;
+  width: 270px;
+  padding: 15px;
+  outline: none;
+  color: #ffffff;
+}
+
+.fieldset-data input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data input::placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data textarea {
+  background: rgba(4, 20, 39, 0.15);
+  border: 0;
+  border-radius: 3px;
+  padding: 15px 25px;
+  width: 580px;
+  height: 155px;
+  outline: none;
+  color: #ffffff;
+}
+
+.fieldset-data textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset-data textarea::placeholder {
+  color: #ffffff;
+}
+
+.form-ask-container button {
+  width: 265px;
+  border-radius: 3px;
+  padding: 15px 73px;
+}
+
+.form-ask-container label {
+  position: relative;
+}
+
+.form-ask-container p {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  display: block;
+  width: 320px;
+  margin: 0;
+  padding-left: 45px;
 }
 
 .form__img {
@@ -1386,70 +1647,9 @@ button,
   padding-top: 54px;
 }
 
-.form__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 15px;
-}
-
-.form__description {
-  margin: 0;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.form-ask__data {
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-  opacity: 0.8;
-  display: block;
-  width: 320px;
-  margin: 0;
-  padding-left: 45px;
-}
-
 .form-ask__data--modal {
   width: 100%;
   margin-top: 20px;
-}
-
-.fieldset-data__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-}
-
-.fieldset-data__list--modal {
-  display: block;
-}
-
-.fieldset-data__item {
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .fieldset-data__item--comment {
@@ -1461,79 +1661,6 @@ button,
   grid-column: 1/3;
 }
 
-.fieldset-data__input {
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: 0;
-  width: 270px;
-  padding: 15px;
-  outline: none;
-  color: #ffffff;
-}
-
-.fieldset-data__input:hover {
-  border-color: #041827;
-}
-
-.fieldset-data__input--modal {
-  width: 100%;
-}
-
-.fieldset-data__input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__input::-moz-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__input:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__input::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__input::placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__textarea {
-  background: rgba(4, 20, 39, 0.15);
-  border: 0;
-  border-radius: 3px;
-  padding: 15px 25px;
-  width: 580px;
-  height: 155px;
-  outline: none;
-  color: #ffffff;
-}
-
-.fieldset-data__textarea--modal {
-  width: 100%;
-}
-
-.fieldset-data__textarea::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__textarea::-moz-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__textarea:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__textarea::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.fieldset-data__textarea::placeholder {
-  color: #ffffff;
-}
-
 .form-ask-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1543,37 +1670,12 @@ button,
   align-items: center;
 }
 
-.form-ask-container--modal {
-  display: block;
-}
-
-.form-ask__button {
-  width: 265px;
-  border-radius: 3px;
-  padding: 15px 73px;
-}
-
-.form-ask__button--modal {
-  width: 100%;
-  padding: 15px 0;
-  padding-left: 220px;
-}
-
 .form-ask__control {
   position: absolute;
   width: 15px;
   height: 15px;
   border: 1px solid #ffffff;
   left: 20px;
-}
-
-.form-ask__control--modal {
-  left: -500px;
-  top: 53px;
-}
-
-.form-ask__label {
-  position: relative;
 }
 
 .form-ask__checkbox[type=checkbox]:checked + .form-ask__control::before,
@@ -1633,6 +1735,14 @@ button,
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
+  }
+
+  .fieldset-data-modal input {
+    width: 320px;
+  }
+
+  .fieldset-data-modal textarea {
+    width: 655px;
   }
 
   .navigation__item--button {
@@ -1796,6 +1906,18 @@ button,
     background: linear-gradient(-53deg, rgb(0, 178, 255) 75%, rgb(0, 178, 255) 75%);
   }
 
+  .fieldset-data input {
+    width: 320px;
+  }
+
+  .fieldset-data textarea {
+    width: 655px;
+  }
+
+  .form-ask-container label {
+    margin-left: 85px;
+  }
+
   .form__img {
     display: none;
   }
@@ -1804,18 +1926,6 @@ button,
     padding: 0 50px;
     width: 770px;
     padding-top: 50px;
-  }
-
-  .fieldset-data__input {
-    width: 320px;
-  }
-
-  .fieldset-data__textarea {
-    width: 655px;
-  }
-
-  .form-ask__label {
-    margin-left: 85px;
   }
 }
 
@@ -1843,6 +1953,25 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .fieldset-data-modal input {
+    width: 270px;
+  }
+
+  .form-container-modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form-container-modal p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .form-ask-container-modal p {
+    width: 234px;
+    padding-left: 28px;
   }
 
   .header-container {
@@ -2023,11 +2152,11 @@ button,
     margin-top: 20px;
   }
 
-  .about__description--desktop {
+  .about__desktop {
     display: none;
   }
 
-  .about__description--mobile {
+  .about__mobile {
     display: inline;
   }
 
@@ -2087,32 +2216,32 @@ button,
     min-height: 750px;
   }
 
-  .fieldset-container {
-    width: 320px;
-    padding: 50px 25px;
-  }
-
-  .form__title {
+  .form-container h2 {
     font-size: 30px;
     line-height: 42px;
   }
 
-  .form__description {
+  .form-container p {
     font-size: 14px;
     line-height: 19px;
   }
 
-  .form-ask__data {
+  .fieldset-data ul {
+    display: block;
+  }
+
+  .fieldset-data input {
+    width: 270px;
+  }
+
+  .form-ask-container p {
     width: 234px;
     padding-left: 28px;
   }
 
-  .fieldset-data__list {
-    display: block;
-  }
-
-  .fieldset-data__input {
-    width: 270px;
+  .fieldset-container {
+    width: 320px;
+    padding: 50px 25px;
   }
 
   .form-ask-container {
