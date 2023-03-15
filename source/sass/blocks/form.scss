@@ -198,6 +198,14 @@
 
 }
 
+.form-ask::after {
+    content: "";
+    width: 510px;
+    height: 285px;
+    position: absolute;
+    background-image: url("../../img/form-airplane-desk.png");
+}
+
 
 .form-ask__data--modal {
     width: 100%;

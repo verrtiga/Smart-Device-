@@ -18,6 +18,8 @@
 
 .advantages-container {
     padding: 120px 329px;
+    width: 100%;
+    margin: 0 auto;
 
     @include vp-1023 {
         padding: 80px 50px;
@@ -33,7 +35,7 @@
     border: 1px solid $color-whisper;
     border-left: 5px solid $color-deep-sky-blue;
     padding: 35px 45px;
-    min-height: 300px;
+    min-height: 100%;
     max-width: 595px;
 
     &:hover {
