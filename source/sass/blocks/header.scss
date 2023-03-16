@@ -13,12 +13,12 @@
     justify-content: space-evenly;
 
     @include vp-1023 {
-        padding: 30px 50px;
+        padding: 20px 50px;
         justify-content: space-between;
     }
 
     @include vp-767 {
-        padding: 30px 24px;
+        padding: 15px 26px;
     }
 }
 
@@ -35,11 +35,11 @@
 
 
 .header__logo {
-    min-height: 55px;
-    min-width: 215px;
+    height: 55px;
+    width: 215px;
 
     @include vp-767 {
-        width: 0;
-        height: 0;
+       width: 35px;
+       height: 35px;
     }
 }

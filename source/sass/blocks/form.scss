@@ -5,6 +5,7 @@
 
     @include vp-1023 {
         background: linear-gradient(-53deg, rgba(0, 178, 255, 1) 75%, rgba(0, 178, 255, 1) 75%);
+        min-height: 580px;
     }
 
     @include vp-767 {
@@ -14,7 +15,11 @@
 
 .form-container {
     margin-bottom: 35px;
-    ;
+
+    @include vp-1023 {
+        margin-bottom: 24px;
+        margin-top: 16px;
+    }
 }
 
 .form-container h2 {
@@ -27,6 +32,10 @@
     color: $color-default-white;
     margin: 0;
     margin-bottom: 15px;
+
+    @include vp-1023 {
+        margin-bottom: 10px;
+    }
 
     @include vp-767 {
         font-size: 30px;
@@ -79,6 +88,10 @@
 .fieldset-data li:not(:last-child) {
     margin-bottom: 20px;
     margin-right: 36px;
+
+    @include vp-1023 {
+        margin-right: 29px;
+    }
 }
 
 .fieldset-data input {
@@ -120,6 +133,15 @@
     height: 155px;
     outline: none;
     color: $color-default-white;
+
+    @include vp-1023 {
+        padding: 33px 12px;
+        width: 670px;
+    }
+
+    @include vp-767 {
+        width: 100%;
+    }
 }
 
 .fieldset-data textarea::placeholder {
@@ -155,7 +177,8 @@
     position: relative;
 
     @include vp-1023 {
-        margin-left: 85px;
+        margin-top: -6px;
+        margin-left: 36px;
     }
 }
 
@@ -201,7 +224,7 @@
     @include vp-1023 {
         padding: 0 50px;
         width: 770px;
-        padding-top: 50px;
+        padding-top: 28px;
     }
 
     @include vp-767 {
@@ -230,6 +253,11 @@
 
     @include vp-1023 {
         background-image: none;
+    }
+
+    @include vp-767 {
+        width: 0;
+        height: 0;
     }
 
 

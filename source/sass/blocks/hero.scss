@@ -4,7 +4,7 @@
     height: 880px;
 
     @include vp-1023 {
-        height: 660px;
+        height: 539px;
     }
 
     @include vp-767 {
@@ -22,10 +22,10 @@
     position: absolute;
     top: -141px;
 
-    @include retina {
-        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
-        background-size: cover;
-    }
+    // @include retina {
+    //     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
+    //     background-size: cover;
+    // }
 
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet.jpg");
@@ -33,19 +33,20 @@
         background-size: cover;
         height: 680px;
 
-        @include retina {
-            background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet@2x.jpg");
-        }
+        // @include retina {
+        //     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet@2x.jpg");
+        // }
     }
 
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile.jpg");
         background-size: cover;
-        height: 580px;
+        height: 631px;
 
-        @include retina {
-            background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile@2x.jpg");
-        }
+        // @include retina {
+        //     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile@2x.jpg");
+
+        // }
     }
 
 }
@@ -57,14 +58,14 @@
     padding-top: 184px;
 
     @include vp-1023 {
-        left: 8%;
-        padding-top: 150px;
-        padding-right: 50px;
+        left: 0;
+        padding: 0 50px;
+
     }
 
     @include vp-767 {
-        padding-right: 20px;
-        padding-top: 93px;
+        padding: 0 25px;
+        margin-top: 79px;
     }
 }
 
@@ -85,12 +86,16 @@
     @include vp-1023 {
         font-size: 63px;
         line-height: 75px;
-        margin-bottom: 20px;
+        margin: 0;
+        margin-top: 77px;
+        margin-left: 4px;
     }
 
     @include vp-767 {
         font-size: 36px;
         line-height: 42px;
+        margin: 0;
+        margin-bottom: 8px;
     }
 }
 
@@ -108,10 +113,11 @@
 
     @include vp-1023 {
         margin-left: 0;
+        margin-bottom: 58px;
     }
 
     @include vp-767 {
-         
+        margin: 0;
         font-size: 14px;
     }
 
@@ -130,11 +136,17 @@
 
     @include vp-1023 {
         margin: 0;
+        margin-left: 45px;
+    }
+
+    @include vp-767 {
+        margin: 0;
+        margin-top: 26px;
     }
 }
 
 .hero__button--mobile {
-  
+
     @include vp-767 {
         display: none;
     }

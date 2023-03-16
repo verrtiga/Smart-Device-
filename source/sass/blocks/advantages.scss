@@ -30,7 +30,8 @@
     }
 
     @include vp-767 {
-        padding: 50px 20px;
+        padding: 0 25px;
+        margin-top: -21px;
     }
 
 }
@@ -56,6 +57,7 @@
         height: 340px;
         min-width: 270px;
         margin-bottom: 30px;
+        padding: 15px 24px;
     }
 }
 
@@ -80,7 +82,8 @@
     margin-bottom: 15px;
 
     @include vp-1023 {
-        margin-top: 15px;
+        margin-top: 10px;
+        margin-bottom: 7px;
     }
 
     @include vp-767 {
