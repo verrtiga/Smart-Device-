@@ -20,7 +20,7 @@
     width: 100%;
     height: 900px;
     position: absolute;
-    top: -20px;
+    top: -141px;
 
     @include retina {
         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
@@ -54,7 +54,7 @@
     position: absolute;
     left: 21%;
     transform: translate-X(-50%);
-    padding-top: 250px;
+    padding-top: 184px;
 
     @include vp-1023 {
         left: 8%;
@@ -79,7 +79,8 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: $color-alice-blue;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
+    margin-left: 72px;
 
     @include vp-1023 {
         font-size: 63px;
@@ -102,10 +103,15 @@
     font-size: 22px;
     line-height: 155%;
     color: $color-alice-blue;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
+    margin-left: 72px;
+
+    @include vp-1023 {
+        margin-left: 0;
+    }
 
     @include vp-767 {
-
+         
         font-size: 14px;
     }
 
@@ -118,8 +124,13 @@
     text-align: center;
     letter-spacing: 0.05em;
     width: 410px;
-    padding: 15px 25px;
+    padding: 17px 25px;
     border-radius: 3px;
+    margin-left: 72px;
+
+    @include vp-1023 {
+        margin: 0;
+    }
 }
 
 .hero__button--mobile {

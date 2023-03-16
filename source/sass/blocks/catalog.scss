@@ -1,7 +1,7 @@
 .catalog {
     background-color: $color-black-pearl;
     padding-top: 58px;
-    padding-bottom: 100px;
+    padding-bottom: 140px;
 }
 
 .catalog__card {
@@ -20,8 +20,9 @@
 .catalog__title {
     font-family: $ff-robotocond;
     display: inline-block;
-    padding-left: 350px;
-    padding-bottom: 45px;
+    padding-top: 4px;
+    padding-left: 175px;
+    padding-bottom: 26px;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -84,7 +85,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    top: 60px;
+    top: 48px;
     left: 41px;
     color: $color-default-white;
 

@@ -1,9 +1,11 @@
 .about-container {
-    padding: 0 124px;
     position: relative;
     max-width: 1220px;
     margin: 0 auto;
-    padding-bottom: 128px;
+    padding-left: 248px;
+    padding-top: 113px;
+    padding-bottom: 121px;
+    
 
     @include vp-1023 {
         padding: 0;
@@ -20,7 +22,8 @@
 
 }
 
-.about-container::before {
+
+.about-container h2::before {
     content: "";
     position: absolute;
     display: block;
@@ -28,7 +31,8 @@
     background-repeat: no-repeat;
     width: 150px;
     height: 320px;
-    left: -93px;
+    left: -249px;
+    bottom: -274px;
 
     @include vp-1023 {
         left: 23px;
@@ -45,6 +49,9 @@
     background-color: transparent;
     border: 1px solid $color-deep-sky-blue;
     color: $color-deep-sky-blue;
+    margin-top: 18px;
+    width: 180px;
+    padding: 10px 48px;
 
     @include vp-767 {
         margin-top: 20px;
@@ -56,6 +63,7 @@
 }
 
 .about-container h2 {
+    position: relative;
     margin: 0;
     font-family: $ff-robotocond;
     font-style: normal;
@@ -74,7 +82,7 @@
     font-size: 16px;
     line-height: 22px;
     color: $color-black-pearl;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .about__desktop {

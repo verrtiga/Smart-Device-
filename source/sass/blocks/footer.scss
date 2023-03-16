@@ -2,9 +2,10 @@
     display: flex;
     justify-content: center;
     background-color: $color-black-pearl;
-    padding: 50px;
+    padding: 30px 0;
     font-size: 16px;
     color: $color-default-white;
+    height: 280px;;
 
     @include vp-1023 {
         display: grid;
@@ -22,8 +23,10 @@
 
 .footer__block {
 
+    margin-top:19px;
+
     &:not(:last-child) {
-        margin-right: 159px;
+        margin-right: 53px;
 
         @include vp-1023 {
             margin: 0;
@@ -42,12 +45,16 @@
 
 .footer__block--section {
 
+    margin-left: 106px;
+
     @include vp-1023 {
         grid-area: 2/1;
     }
 }
 
 .footer__block--office {
+
+    margin-left: 191px;
 
     @include vp-1023 {
         grid-area: 2/2;
@@ -57,7 +64,8 @@
 
 .footer__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+    margin-top:10px;
     text-transform: uppercase;
     font-family: $ff-robotocond;
     font-style: normal;
@@ -76,6 +84,13 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+.footer__list--section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    column-gap: 30px;
 }
 
 .footer__list--social {
@@ -107,7 +122,7 @@
 }
 
 .footer__icon {
-    margin: 20px;
+    margin: 13px 13px;
     margin-top: 0;
     fill: $color-default-white;
 }
@@ -119,6 +134,7 @@
 .footer__link:hover {
     color: $color-black-pearl;
 }
+
 
 @include vp-767 {
 

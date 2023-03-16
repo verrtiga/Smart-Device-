@@ -1,6 +1,7 @@
 
 .navigation {
-    margin-left: 100px;
+    margin-right: 68px;
+    margin-top: 4px;
 
     @include vp-767 {
         margin:0;
@@ -70,7 +71,7 @@
 
 .navigation__icon {
     position: absolute;
-    left: -29px;
+    left: -39px;
 
     @include vp-1023 {
         position: unset;

@@ -14,10 +14,14 @@
 
 .advantages__item {
     max-width: 595px;
+
+    @include vp-1023 {
+        margin: 0;
+    }
 }
 
 .advantages-container {
-    padding: 120px 329px;
+    padding: 0 351px;
     width: 100%;
     margin: 0 auto;
 
@@ -34,8 +38,8 @@
 .advantages__item-container {
     border: 1px solid $color-whisper;
     border-left: 5px solid $color-deep-sky-blue;
-    padding: 35px 45px;
-    min-height: 100%;
+    padding: 35px 39px;
+    min-height: 300px;
     max-width: 595px;
 
     &:hover {
@@ -72,7 +76,7 @@
     line-height: 140%;
     align-items: center;
     color: $color-deep-sky-blue;
-    margin-top: 40px;
+    margin-top: 19px;
     margin-bottom: 15px;
 
     @include vp-1023 {

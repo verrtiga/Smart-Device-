@@ -1032,7 +1032,8 @@ button,
 }
 
 .navigation {
-  margin-left: 100px;
+  margin-right: 68px;
+  margin-top: 4px;
 }
 
 .navigation__list {
@@ -1084,7 +1085,7 @@ button,
 
 .navigation__icon {
   position: absolute;
-  left: -29px;
+  left: -39px;
 }
 
 .header {
@@ -1130,22 +1131,36 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #041827;
-  padding: 50px;
+  padding: 30px 0;
   font-size: 16px;
   color: #ffffff;
+  height: 280px;
 }
 
 .footer-container {
   margin-bottom: 35px;
 }
 
+.footer__block {
+  margin-top: 19px;
+}
+
 .footer__block:not(:last-child) {
-  margin-right: 159px;
+  margin-right: 53px;
+}
+
+.footer__block--section {
+  margin-left: 106px;
+}
+
+.footer__block--office {
+  margin-left: 191px;
 }
 
 .footer__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+  margin-top: 10px;
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1172,6 +1187,18 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.footer__list--section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 130px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
 }
 
 .footer__list--social {
@@ -1202,7 +1229,7 @@ button,
 }
 
 .footer__icon {
-  margin: 20px;
+  margin: 13px 13px;
   margin-top: 0;
   fill: #ffffff;
 }
@@ -1231,7 +1258,7 @@ button,
   width: 100%;
   height: 900px;
   position: absolute;
-  top: -20px;
+  top: -141px;
 }
 
 .hero-container {
@@ -1240,7 +1267,7 @@ button,
   -webkit-transform: translate-X(-50%);
   -ms-transform: translate-X(-50%);
   transform: translate-X(-50%);
-  padding-top: 250px;
+  padding-top: 184px;
 }
 
 .hero__title {
@@ -1254,7 +1281,8 @@ button,
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #f2f5f6;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
+  margin-left: 72px;
 }
 
 .hero__description {
@@ -1266,7 +1294,8 @@ button,
   font-size: 22px;
   line-height: 155%;
   color: #f2f5f6;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
+  margin-left: 72px;
 }
 
 .hero__button {
@@ -1276,8 +1305,9 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   width: 410px;
-  padding: 15px 25px;
+  padding: 17px 25px;
   border-radius: 3px;
+  margin-left: 72px;
 }
 
 .hero__button--hidden {
@@ -1300,7 +1330,7 @@ button,
 }
 
 .advantages-container {
-  padding: 120px 329px;
+  padding: 0 351px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1308,8 +1338,8 @@ button,
 .advantages__item-container {
   border: 1px solid #e5e5e5;
   border-left: 5px solid #00b2ff;
-  padding: 35px 45px;
-  min-height: 100%;
+  padding: 35px 39px;
+  min-height: 300px;
   max-width: 595px;
 }
 
@@ -1337,7 +1367,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #00b2ff;
-  margin-top: 40px;
+  margin-top: 19px;
   margin-bottom: 15px;
 }
 
@@ -1360,14 +1390,15 @@ button,
 }
 
 .about-container {
-  padding: 0 124px;
   position: relative;
   max-width: 1220px;
   margin: 0 auto;
-  padding-bottom: 128px;
+  padding-left: 248px;
+  padding-top: 113px;
+  padding-bottom: 121px;
 }
 
-.about-container::before {
+.about-container h2::before {
   content: "";
   position: absolute;
   display: block;
@@ -1375,13 +1406,17 @@ button,
   background-repeat: no-repeat;
   width: 150px;
   height: 320px;
-  left: -93px;
+  left: -249px;
+  bottom: -274px;
 }
 
 .about__button {
   background-color: transparent;
   border: 1px solid #00b2ff;
   color: #00b2ff;
+  margin-top: 18px;
+  width: 180px;
+  padding: 10px 48px;
 }
 
 .about__additional--hidden {
@@ -1389,6 +1424,7 @@ button,
 }
 
 .about-container h2 {
+  position: relative;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1407,7 +1443,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #041827;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .about__mobile {
@@ -1421,7 +1457,7 @@ button,
 .catalog {
   background-color: #041827;
   padding-top: 58px;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 
 .catalog__card {
@@ -1435,8 +1471,9 @@ button,
 .catalog__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
-  padding-left: 350px;
-  padding-bottom: 45px;
+  padding-top: 4px;
+  padding-left: 175px;
+  padding-bottom: 26px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1468,7 +1505,7 @@ button,
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  top: 60px;
+  top: 48px;
   left: 41px;
   color: #ffffff;
 }
@@ -1523,9 +1560,9 @@ button,
 }
 
 .form {
-  min-height: 542px;
-  background: -o-linear-gradient(143deg, rgb(0, 178, 255) 75%, rgb(14, 85, 122) 75%);
-  background: linear-gradient(-53deg, rgb(0, 178, 255) 75%, rgb(14, 85, 122) 75%);
+  min-height: 841px;
+  background: -o-linear-gradient(132deg, rgb(0, 178, 255) 65%, rgb(14, 85, 122) 65%);
+  background: linear-gradient(318deg, rgb(0, 178, 255) 65%, rgb(14, 85, 122) 65%);
   position: relative;
 }
 
@@ -1555,7 +1592,7 @@ button,
 }
 
 .fieldset-data {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .fieldset-data ul {
@@ -1577,7 +1614,11 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.fieldset-data li:not(:last-child) {
   margin-bottom: 20px;
+  margin-right: 36px;
 }
 
 .fieldset-data input {
@@ -1622,8 +1663,8 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border: 0;
   border-radius: 3px;
-  padding: 15px 25px;
-  width: 100%;
+  padding: 27px 12px;
+  width: 580px;
   height: 155px;
   outline: none;
   color: #ffffff;
@@ -1660,7 +1701,15 @@ button,
 .form-ask-container button {
   width: 265px;
   border-radius: 3px;
-  padding: 15px 73px;
+  padding: 12px 68px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .form-ask-container label {
@@ -1678,7 +1727,8 @@ button,
   display: block;
   width: 320px;
   margin: 0;
-  padding-left: 45px;
+  padding-left: 75px;
+  padding-top: 12px;
 }
 
 .form__img {
@@ -1691,8 +1741,18 @@ button,
   width: 585px;
   height: 420px;
   margin-left: auto;
-  margin-right: 170px;
-  padding-top: 54px;
+  margin-right: 354px;
+  padding-top: 164px;
+}
+
+.form-ask::after {
+  content: "";
+  width: 510px;
+  height: 285px;
+  position: absolute;
+  background-image: url("../../img/form-airplane-desk.png");
+  left: 347px;
+  top: 250px;
 }
 
 .form-ask__data--modal {
@@ -1723,7 +1783,8 @@ button,
   width: 15px;
   height: 15px;
   border: 1px solid #ffffff;
-  left: 20px;
+  left: 49px;
+  top: 19px;
 }
 
 .form-ask__checkbox[type=checkbox]:checked + .form-ask__control::before,
@@ -1779,6 +1840,18 @@ button,
     }
   }
 */
+
+@media (max-width: 1919px) {
+  .form-ask::after {
+    left: 2px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .form-ask::after {
+    background-image: none;
+  }
+}
 
 @media (max-width: 1023px) {
   .container {
@@ -1884,6 +1957,18 @@ button,
     margin-bottom: 20px;
   }
 
+  .hero__description {
+    margin-left: 0;
+  }
+
+  .hero__button {
+    margin: 0;
+  }
+
+  .advantages__item {
+    margin: 0;
+  }
+
   .advantages-container {
     padding: 80px 50px;
   }
@@ -1904,7 +1989,7 @@ button,
     padding-bottom: 80px;
   }
 
-  .about-container::before {
+  .about-container h2::before {
     left: 23px;
   }
 
@@ -1970,6 +2055,10 @@ button,
     padding: 0 50px;
     width: 770px;
     padding-top: 50px;
+  }
+
+  .form-ask::after {
+    background-image: none;
   }
 }
 
@@ -2192,7 +2281,7 @@ button,
     padding-bottom: 92px;
   }
 
-  .about-container::before {
+  .about-container h2::before {
     background-image: none;
   }
 
