@@ -236,7 +236,17 @@
   padding-left: 220px;
 }
 
-.form-ask-container-modal p {
+
+.form-ask__control--modal {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  left: 53px;
+  top: 570px;
+}
+
+.form-ask__description--modal {
   width: 100%;
   font-family: $ff-mono;
   font-style: normal;
@@ -254,13 +264,4 @@
     width: 234px;
     padding-left: 28px;
   }
-}
-
-.form-ask__control--modal {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 1px solid $color-default-white;
-  left: 53px;
-  top: 570px;
 }

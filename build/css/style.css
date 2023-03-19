@@ -912,7 +912,16 @@ button,
   padding-left: 220px;
 }
 
-.form-ask-container-modal p {
+.form-ask__control--modal {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  left: 53px;
+  top: 570px;
+}
+
+.form-ask__description--modal {
   width: 100%;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -925,15 +934,6 @@ button,
   margin: 0;
   margin-top: 20px;
   padding-left: 45px;
-}
-
-.form-ask__control--modal {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #ffffff;
-  left: 53px;
-  top: 570px;
 }
 
 .custom-input,
@@ -1720,7 +1720,7 @@ button,
   position: relative;
 }
 
-.form-ask-container p {
+.form-ask__description {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2166,7 +2166,7 @@ button,
     line-height: 19px;
   }
 
-  .form-ask-container-modal p {
+  .form-ask__description--modal {
     width: 234px;
     padding-left: 28px;
   }
@@ -2514,7 +2514,7 @@ button,
     width: 270px;
   }
 
-  .form-ask-container p {
+  .form-ask__description {
     width: 234px;
     padding-left: 28px;
     padding-top: 0;
