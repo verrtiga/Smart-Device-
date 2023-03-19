@@ -18,6 +18,13 @@
     @include vp-1023 {
         margin: 0;
     }
+
+}
+
+.advantages__item:not(:last-child) {
+    @include vp-767 {
+        margin-bottom: 30px;
+    }
 }
 
 .advantages-container {
@@ -31,7 +38,6 @@
 
     @include vp-767 {
         padding: 0 25px;
-        margin-top: -21px;
     }
 
 }
@@ -54,10 +60,9 @@
     }
 
     @include vp-767 {
-        height: 340px;
+        height: 325px;
         min-width: 270px;
-        margin-bottom: 30px;
-        padding: 15px 24px;
+        padding: 30px 30px;
     }
 }
 
@@ -82,12 +87,14 @@
     margin-bottom: 15px;
 
     @include vp-1023 {
+        line-height: 34px;
         margin-top: 10px;
         margin-bottom: 7px;
     }
 
     @include vp-767 {
         font-size: 20px;
+        line-height: 28px;
         margin: 0;
     }
 
@@ -101,11 +108,12 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 135%;
+    line-height: 22px;
     color: $color-black-pearl;
 
     @include vp-767 {
         font-size: 14px;
+        line-height: 19px;
 
     }
 }

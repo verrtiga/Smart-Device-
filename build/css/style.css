@@ -928,6 +928,10 @@ button,
 }
 
 .form-ask__control--modal {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
   left: 53px;
   top: 570px;
 }
@@ -1377,7 +1381,7 @@ button,
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 135%;
+  line-height: 22px;
   color: #041827;
 }
 
@@ -1998,6 +2002,7 @@ button,
   }
 
   .advantages__title {
+    line-height: 34px;
     margin-top: 10px;
     margin-bottom: 7px;
   }
@@ -2185,6 +2190,12 @@ button,
     height: 35px;
   }
 
+  .footer-container {
+    padding-top: 32px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+  }
+
   .footer__list--social {
     margin: 0;
   }
@@ -2192,7 +2203,7 @@ button,
   .footer {
     display: block;
     padding: 0;
-    height: 475px;
+    height: auto;
   }
 
   .footer__block {
@@ -2215,15 +2226,15 @@ button,
   .footer__block--section {
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 20px;
   }
 
   .footer-container {
     margin: 0;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    padding-left: 20px;
+    padding: 0;
+    padding-top: 35px;
+    padding-left: 52px;
   }
 
   .footer__list {
@@ -2235,7 +2246,8 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 31px;
+    padding-left: 78px;
+    padding-top: 20px;
   }
 
   .footer__title--disable::after {
@@ -2333,31 +2345,36 @@ button,
     gap: 0;
   }
 
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   .advantages-container {
     padding: 0 25px;
-    margin-top: -21px;
   }
 
   .advantages__item-container {
-    height: 340px;
+    height: 325px;
     min-width: 270px;
-    margin-bottom: 30px;
-    padding: 15px 24px;
+    padding: 30px 30px;
   }
 
   .advantages__title {
     font-size: 20px;
+    line-height: 28px;
     margin: 0;
   }
 
   .advantages__description {
     font-size: 14px;
+    line-height: 19px;
   }
 
   .about-container {
     padding: 0;
     max-width: 270px;
-    padding-bottom: 92px;
+    padding-bottom: 78px;
+    padding-top: 62px;
   }
 
   .about-container h2::before {
@@ -2365,7 +2382,19 @@ button,
   }
 
   .about__button {
-    margin-top: 20px;
+    padding: 9px 38px;
+    width: 160px;
+  }
+
+  .about-container h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
   }
 
   .about__desktop {
@@ -2376,11 +2405,16 @@ button,
     display: inline;
   }
 
+  .catalog {
+    padding-top: 27px;
+    padding-bottom: 86px;
+  }
+
   .catalog__title {
     font-size: 28px;
     line-height: 39px;
     padding: 0;
-    padding: 0 25px;
+    padding: 9px 15px;
   }
 
   .catalog__title--desktop {
@@ -2393,12 +2427,14 @@ button,
 
   .catalog-container {
     padding: 0 25px;
-    margin-top: 40px;
+    margin-top: 13px;
   }
 
   .catalog__name {
     font-size: 18px;
     line-height: 30px;
+    top: 26px;
+    left: 30px;
   }
 
   .catalog__card--production {
@@ -2428,8 +2464,18 @@ button,
     height: 250px;
   }
 
+  .catalog__button {
+    width: 40px;
+    height: 40px;
+  }
+
   .form {
     min-height: 750px;
+  }
+
+  .form-container {
+    margin-top: 6px;
+    margin-bottom: 34px;
   }
 
   .form-container h2 {
@@ -2442,8 +2488,16 @@ button,
     line-height: 19px;
   }
 
+  .fieldset-data {
+    margin-bottom: 26px;
+  }
+
   .fieldset-data ul {
     display: block;
+  }
+
+  .fieldset-data li:not(:last-child) {
+    margin-bottom: 21px;
   }
 
   .fieldset-data input {
@@ -2452,16 +2506,23 @@ button,
 
   .fieldset-data textarea {
     width: 100%;
+    height: 180px;
+    padding: 26px 12px;
+  }
+
+  .form-ask-container button {
+    width: 270px;
   }
 
   .form-ask-container p {
     width: 234px;
     padding-left: 28px;
+    padding-top: 0;
   }
 
   .fieldset-container {
     width: 320px;
-    padding: 50px 25px;
+    padding: 39px 25px;
   }
 
   .form-ask::after {
@@ -2474,7 +2535,7 @@ button,
   }
 
   .form-ask__control {
-    left: -84px;
+    left: -31px;
     top: 28px;
     right: 0;
     bottom: 0;

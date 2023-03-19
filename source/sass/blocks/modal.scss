@@ -257,6 +257,10 @@
 }
 
 .form-ask__control--modal {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
   left: 53px;
   top: 570px;
 }

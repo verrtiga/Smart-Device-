@@ -18,7 +18,8 @@
     @include vp-767 {
         padding: 0;
         max-width: 270px;
-        padding-bottom: 92px;
+        padding-bottom: 78px;
+        padding-top: 62px;
     }
 
 }
@@ -60,7 +61,8 @@
     }
 
     @include vp-767 {
-        margin-top: 20px;
+        padding: 9px 38px;
+        width: 160px;
     }
 }
 
@@ -83,6 +85,11 @@
         margin-top: 4px;
         margin-bottom: 13px;
     }
+
+    @include vp-767 {
+        font-size: 28px;
+        line-height: 39px;
+    }
 }
 
 .about p {
@@ -97,6 +104,12 @@
 
     @include vp-1023 {
         margin-bottom: 19px;
+    }
+
+    @include vp-767 {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 10px;
     }
 }
 

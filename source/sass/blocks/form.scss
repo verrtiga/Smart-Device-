@@ -20,6 +20,11 @@
         margin-bottom: 24px;
         margin-top: 16px;
     }
+
+    @include vp-767 {
+        margin-top: 6px;
+        margin-bottom: 34px;
+    }
 }
 
 .form-container h2 {
@@ -61,6 +66,10 @@
 
 .fieldset-data {
     margin-bottom: 32px;
+
+    @include vp-767 {
+        margin-bottom: 26px;
+    }
 }
 
 .fieldset-data ul {
@@ -91,6 +100,10 @@
 
     @include vp-1023 {
         margin-right: 29px;
+    }
+
+    @include vp-767 {
+        margin-bottom: 21px;
     }
 }
 
@@ -141,11 +154,14 @@
 
     @include vp-767 {
         width: 100%;
+        height: 180px;
+        padding: 26px 12px;
     }
 }
 
 .fieldset-data textarea::placeholder {
     color: $color-default-white;
+
 }
 
 .fieldset-data textarea:hover {
@@ -170,6 +186,11 @@
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+
+    @include vp-767 {
+        width: 270px;
+
+    }
 
 }
 
@@ -199,6 +220,7 @@
     @include vp-767 {
         width: 234px;
         padding-left: 28px;
+        padding-top: 0;
     }
 }
 
@@ -229,7 +251,7 @@
 
     @include vp-767 {
         width: 320px;
-        padding: 50px 25px;
+        padding: 39px 25px;
     }
 
 }
@@ -293,7 +315,7 @@
     top: 19px;
 
     @include vp-767 {
-        left: -84px;
+        left: -31px;
         top: 28px;
         right: 0;
         bottom: 0;
