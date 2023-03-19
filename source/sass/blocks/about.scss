@@ -1,26 +1,31 @@
 .about-container {
-    padding: 0 124px;
     position: relative;
     max-width: 1220px;
     margin: 0 auto;
-    padding-bottom: 128px;
+    padding-left: 248px;
+    padding-top: 113px;
+    padding-bottom: 121px;
+
 
     @include vp-1023 {
         padding: 0;
-        padding-left: 225px;
+        padding-left: 175px;
         max-width: 674px;
-        padding-bottom: 80px;
+        padding-bottom: 82px;
+        margin-top: -11px
     }
 
     @include vp-767 {
         padding: 0;
         max-width: 270px;
-        padding-bottom: 92px;
+        padding-bottom: 78px;
+        padding-top: 62px;
     }
 
 }
 
-.about-container::before {
+
+.about-container h2::before {
     content: "";
     position: absolute;
     display: block;
@@ -28,10 +33,12 @@
     background-repeat: no-repeat;
     width: 150px;
     height: 320px;
-    left: -93px;
+    left: -249px;
+    bottom: -274px;
 
     @include vp-1023 {
-        left: 23px;
+        left: -179px;
+        bottom: -273px;
     }
 
     @include vp-767 {
@@ -45,9 +52,17 @@
     background-color: transparent;
     border: 1px solid $color-deep-sky-blue;
     color: $color-deep-sky-blue;
+    margin-top: 18px;
+    width: 180px;
+    padding: 10px 48px;
+
+    @include vp-1023 {
+        margin: 0;
+    }
 
     @include vp-767 {
-        margin-top: 20px;
+        padding: 9px 38px;
+        width: 160px;
     }
 }
 
@@ -55,7 +70,8 @@
     display: none;
 }
 
-.about__title {
+.about-container h2 {
+    position: relative;
     margin: 0;
     font-family: $ff-robotocond;
     font-style: normal;
@@ -64,9 +80,19 @@
     line-height: 51px;
     color: $color-black-pearl;
     margin-bottom: 15px;
+
+    @include vp-1023 {
+        margin-top: 4px;
+        margin-bottom: 13px;
+    }
+
+    @include vp-767 {
+        font-size: 28px;
+        line-height: 39px;
+    }
 }
 
-.about__description {
+.about p {
     margin: 0;
     font-family: $ff-mono;
     font-style: normal;
@@ -74,16 +100,26 @@
     font-size: 16px;
     line-height: 22px;
     color: $color-black-pearl;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+
+    @include vp-1023 {
+        margin-bottom: 19px;
+    }
+
+    @include vp-767 {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
 }
 
-.about__description--desktop {
+.about__desktop {
     @include vp-767 {
         display: none;
     }
 }
 
-.about__description--mobile {
+.about__mobile {
     display: none;
 
     @include vp-767 {
@@ -94,4 +130,3 @@
 .about__additional {
     margin-top: 30px;
 }
-

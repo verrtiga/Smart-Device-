@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color:  rgba(3, 16, 27, 0.7);
+  background-color: rgba(3, 16, 27, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -114,4 +114,153 @@
 
     pointer-events: auto;
   }
+}
+
+.form-container-modal {
+  margin-bottom: 35px;
+}
+
+.fieldset-data-modal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.fieldset-data-modal li {
+  font-family: $ff-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin-bottom: 20px;
+}
+
+.fieldset-data-modal input {
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    width: 320px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+}
+
+.fieldset-data-modal input::placeholder {
+  color: $color-default-white;
+}
+
+.fieldset-data-modal input:hover {
+  outline: 1px solid $color-default-white;
+}
+
+.fieldset-data-modal input:focus {
+  outline: 2px solid $color-default-white;
+}
+
+
+.fieldset-data-modal textarea {
+  background: rgba(4, 20, 39, 0.15);
+  border: 0;
+  border-radius: 3px;
+  padding: 15px 25px;
+  width: 100%;
+  height: 155px;
+  outline: none;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    width: 655px;
+  }
+}
+
+.fieldset-data-modal textarea::placeholder {
+  color: $color-default-white;
+}
+
+.fieldset-data-modal textarea:hover {
+  outline: 1px solid $color-default-white;
+}
+
+.fieldset-data-modal textarea:focus {
+  outline: 2px solid $color-default-white;
+}
+
+.form-container-modal h2 {
+  font-family: $ff-robotocond;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.form-container-modal p {
+  margin: 0;
+  font-family: $ff-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.form-ask-container-modal {
+  display: block;
+}
+
+.form-ask-container-modal button {
+  width: 100%;
+  padding: 15px 0;
+  padding-left: 220px;
+}
+
+.form-ask-container-modal p {
+  width: 100%;
+  font-family: $ff-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+  display: block;
+  margin: 0;
+  margin-top: 20px;
+  padding-left: 45px;
+
+  @include vp-767 {
+    width: 234px;
+    padding-left: 28px;
+  }
+}
+
+.form-ask__control--modal {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  left: 53px;
+  top: 570px;
 }
