@@ -92,6 +92,20 @@
     }
 }
 
+.about-container p:nth-of-type(3) {
+    display: none;
+
+    @include vp-767 {
+        display: inline;
+    }
+}
+
+.about-container p:nth-of-type(2) {
+    @include vp-767 {
+        display: none;
+    }
+}
+
 .about p {
     margin: 0;
     font-family: $ff-mono;
@@ -110,20 +124,6 @@
         font-size: 14px;
         line-height: 19px;
         margin-bottom: 10px;
-    }
-}
-
-.about__desktop {
-    @include vp-767 {
-        display: none;
-    }
-}
-
-.about__mobile {
-    display: none;
-
-    @include vp-767 {
-        display: inline;
     }
 }
 
