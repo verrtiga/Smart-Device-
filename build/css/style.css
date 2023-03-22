@@ -1145,6 +1145,13 @@ button,
   margin-bottom: 35px;
 }
 
+.footer__link--social {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
 .footer__block {
   margin-top: 19px;
 }
@@ -1233,7 +1240,6 @@ button,
 }
 
 .footer__icon {
-  margin: 13px 13px;
   margin-top: 0;
   fill: #ffffff;
 }

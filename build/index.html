@@ -10,6 +10,10 @@
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -28,7 +32,7 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="info$sd.ru">
+            <a class="navigation__link" href="info@sd.ru">
               <svg class="navigation__icon" width="21" height="20" fill="none">
                 <use href="img/sprite/sprite.svg#nav-mail"></use>
               </svg>
@@ -36,7 +40,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="+74950005252">
+            <a class="navigation__link" href="74950005252">
               <svg class="navigation__icon" width="21" height="20" fill="none">
                 <use href="img/sprite/sprite.svg#nav-phone"></use>
               </svg>
@@ -56,8 +60,10 @@
       <div class="hero-container">
         <h1 class="hero__title">Печатные платы</h1>
         <p class="hero__description">производство и&nbsp;монтаж, поставка комплектующих,<br>блоков и&nbsp;модулей</p>
-        <a class="btn hero__button hero__button--mobile" href="#forma">получить бесплатную консультацию</a>
-        <a class="btn hero__button hero__button--hidden" href="#forma">бесплатная консультация</a>
+        <a class="hero__link">
+        <span class="btn hero__button hero__button--mobile" href="#forma">получить бесплатную консультацию</span>
+        <span class="btn hero__button hero__button--hidden" href="#forma">бесплатная консультация</span>
+        </a>
       </div>
     </section>
     <section class="advantages">
@@ -145,10 +151,10 @@
     </section>
     <section class="catalog">
       <h2 class="catalog__title">
-        <span class="catalog__title catalog__title--desktop">
+        <span class="catalog__title--desktop">
           Smart Device предлагает следующие товары и&nbsp;услуги
         </span>
-        <span class="catalog__title catalog__title--mobile">
+        <span class="catalog__title--mobile">
           Товары и&nbsp;услуги Smart Device
         </span>
       </h2>
@@ -177,15 +183,15 @@
           <div class=" fieldset-data">
             <ul>
               <li>
-                <input type="text" minlength="1" placeholder="Имя" name="Name" required>
+                <input type="text" minlength="1" placeholder="Имя" name="Name" aria-label="Имя." required>
               </li>
               <li>
                 <div class="input-group" data-validate-type="phone" data-required>
-                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" required>
+                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" aria-label="Телефон." required>
                 </div>
               </li>
               <li class="fieldset-data__item--comment">
-                <textarea placeholder="Ваш вопрос" name="Question"></textarea>
+                <textarea placeholder="Ваш вопрос" name="Question" aria-label="Ваш вопрос."></textarea>
               </li>
             </ul>
           </div>
@@ -211,7 +217,7 @@
       </div>
       <ul class="footer__list footer__list--social">
         <li class="footer__item">
-          <a class="footer__link" href="#">
+          <a class="footer__link footer__link--social" href="#">
             <svg class="footer__icon" width="30" height="30">
               <use href="img/sprite/sprite.svg#ok"></use>
             </svg>
@@ -219,7 +225,7 @@
           </a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#">
+          <a class="footer__link footer__link--social" href="#">
             <svg class="footer__icon" width="30" height="30">
               <use href="img/sprite/sprite.svg#vk"></use>
             </svg>
@@ -227,7 +233,7 @@
           </a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#">
+          <a class="footer__link footer__link--social" href="#">
             <svg class="footer__icon" width="30" height="30">
               <use href="img/sprite/sprite.svg#pinter"></use>
             </svg>
@@ -329,7 +335,7 @@
                   </div>
                 </li>
                 <li>
-                  <textarea placeholder="Ваш вопрос" name="Question"></textarea>
+                  <textarea placeholder="Ваш вопрос" name="Question" aria-label="Ваш вопрос."></textarea>
                 </li>
               </ul>
             </div>

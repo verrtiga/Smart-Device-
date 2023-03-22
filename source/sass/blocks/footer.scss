@@ -33,6 +33,14 @@
     }
 }
 
+.footer__link--social {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+
 
 .footer__block {
 
@@ -147,7 +155,6 @@
 }
 
 .footer__icon {
-    margin: 13px 13px;
     margin-top: 0;
     fill: $color-default-white;
 }
