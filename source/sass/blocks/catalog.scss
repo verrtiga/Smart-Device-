@@ -1,7 +1,7 @@
 .catalog {
     background-color: $color-black-pearl;
     padding-top: 58px;
-    padding-bottom: 140px;
+    padding-bottom: 141px;
 
     @include vp-1023 {
         padding-top: 19px;
@@ -9,7 +9,7 @@
     }
 
     @include vp-767 {
-        padding-top: 27px;
+        padding-top: 45px;
         padding-bottom: 86px;
 
     }
@@ -32,8 +32,8 @@
     font-family: $ff-robotocond;
     display: inline-block;
     padding-top: 4px;
-    padding-left: 175px;
-    padding-bottom: 26px;
+    padding-left: 354px;
+    padding-bottom: 56px;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -42,16 +42,17 @@
     margin: 0;
 
     @include vp-1023 {
-        padding-left: 25px;
-        padding-top: 19px;
-        padding-bottom: 18px;
+        padding-left: 51px;
+        padding-top: 38px;
+        padding-bottom: 37px;
     }
 
     @include vp-767 {
         font-size: 28px;
         line-height: 39px;
         padding: 0;
-        padding: 9px 15px;
+        padding: 2px 29px;
+        padding-bottom: 16px;
     }
 }
 

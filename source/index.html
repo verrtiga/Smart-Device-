@@ -10,6 +10,10 @@
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -28,7 +32,7 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="info$sd.ru">
+            <a class="navigation__link" href="info@sd.ru">
               <svg class="navigation__icon" width="21" height="20" fill="none">
                 <use href="img/sprite/sprite.svg#nav-mail"></use>
               </svg>
@@ -36,7 +40,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="+74950005252">
+            <a class="navigation__link" href="74950005252">
               <svg class="navigation__icon" width="21" height="20" fill="none">
                 <use href="img/sprite/sprite.svg#nav-phone"></use>
               </svg>
@@ -56,8 +60,10 @@
       <div class="hero-container">
         <h1 class="hero__title">Печатные платы</h1>
         <p class="hero__description">производство и&nbsp;монтаж, поставка комплектующих,<br>блоков и&nbsp;модулей</p>
-        <a class="btn hero__button hero__button--mobile" href="#forma">получить бесплатную консультацию</a>
-        <a class="btn hero__button hero__button--hidden" href="#forma">бесплатная консультация</a>
+        <a class="hero__link">
+        <span class="btn hero__button hero__button--mobile" href="#forma">получить бесплатную консультацию</span>
+        <span class="btn hero__button hero__button--hidden" href="#forma">бесплатная консультация</span>
+        </a>
       </div>
     </section>
     <section class="advantages">
@@ -117,16 +123,16 @@
         <h2>О компании</h2>
         <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы
           и&nbsp;предоставляем
-          мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы
-          до&nbsp;10&nbsp;дней. </p>
-        <p class="about__desktop"> Наши поставщики&nbsp;&mdash; мировые производители
+          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы
+          до 10дней.</p>
+        <p> Наши поставщики&nbsp;&mdash; мировые производители
           электронных
           компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
           платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД),
           РоссАвтоПрома
           (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
         </p>
-        <p class="about__mobile"> Наши поставщики&nbsp;&mdash; мировые производители
+        <p> Наши поставщики&nbsp;&mdash; мировые производители
           электронных
           компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
         <button class="btn about__button" type="button">Подробнее</button>
@@ -145,10 +151,10 @@
     </section>
     <section class="catalog">
       <h2 class="catalog__title">
-        <span class="catalog__title catalog__title--desktop">
+        <span class="catalog__title--desktop">
           Smart Device предлагает следующие товары и&nbsp;услуги
         </span>
-        <span class="catalog__title catalog__title--mobile">
+        <span class="catalog__title--mobile">
           Товары и&nbsp;услуги Smart Device
         </span>
       </h2>
@@ -177,15 +183,15 @@
           <div class=" fieldset-data">
             <ul>
               <li>
-                <input type="text" minlength="1" placeholder="Имя" name="Name" required>
+                <input type="text" minlength="1" placeholder="Имя" name="Name" aria-label="Имя." required>
               </li>
               <li>
                 <div class="input-group" data-validate-type="phone" data-required>
-                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" required>
+                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" aria-label="Телефон." required>
                 </div>
               </li>
               <li class="fieldset-data__item--comment">
-                <textarea placeholder="Ваш вопрос" name="Question"></textarea>
+                <textarea placeholder="Ваш вопрос" name="Question" aria-label="Ваш вопрос."></textarea>
               </li>
             </ul>
           </div>
@@ -210,24 +216,24 @@
         </a>
       </div>
       <ul class="footer__list footer__list--social">
-        <li class="footer__item">
-          <a class="footer__link" href="#">
+        <li class="footer__item footer__item--social">
+          <a class="footer__link footer__link--social" href="#">
             <svg class="footer__icon" width="30" height="30">
               <use href="img/sprite/sprite.svg#ok"></use>
             </svg>
             <span class="visually-hidden">Одноклассиники.</span>
           </a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
+        <li class="footer__item footer__item--social">
+          <a class="footer__link footer__link--social" href="#">
             <svg class="footer__icon" width="30" height="30">
               <use href="img/sprite/sprite.svg#vk"></use>
             </svg>
             <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">
+        <li class="footer__item footer__item--social">
+          <a class="footer__link footer__link--social" href="#">
             <svg class="footer__icon" width="30" height="30">
               <use href="img/sprite/sprite.svg#pinter"></use>
             </svg>
@@ -239,37 +245,37 @@
     <div class="footer__block footer__block--section">
       <h3 class="footer__title footer__title--disable">Разделы сайта</h3>
       <ul class="footer__list footer__list--section">
-        <li class="footer__item">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             О Компании
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             Продукты
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
-            Производство печатных плат
+            Производство печатных<br>плат
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             Монтаж печатных плат
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             Комплектующие
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             Доставка
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             Контакты
           </a>
@@ -279,22 +285,22 @@
     <div class="footer__block footer__block--office">
       <h3 class="footer__title footer__title--disable">Наш офис</h3>
       <ul class="footer__list">
-        <li class="footer__item">
+        <li class="footer__item footer__item--office">
           <a class="footer__link" href="#">
-            г. Мытищи, Олимпийский проспект, д.10
+            г. Мытищи, Олимпийский проспект,<br>д.10
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--office">
           <a class="footer__link" href="+74955894050">
             +7 (495) 589-40-50
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--office">
           <a class="footer__link" href="+79253895829">
             +7 (925) 389-58-29
           </a>
         </li>
-        <li class="footer__item">
+        <li class="footer__item footer__item--office">
           <a class="footer__link" href="+79253647813">
             +7 (925) 364-78-13
           </a>
@@ -312,7 +318,7 @@
         <div class="modal-container">
           <div class="form-container-modal">
             <h2 class="form__title form__title--modal"> Закажите звонок </h2>
-            <p class="form__description form__description--modal">Оставьте контакты, мы проконсультируем вас бесплатно в
+            <p class="form__description form__description--modal">Оставьте контакты, мы проконсультируем<br>вас бесплатно в
               удобное время</p>
           </div>
           <form class="form-ask-modal" action="https://echo.htmlacademy.ru/courses" method="get" name="Modal-form">
@@ -329,7 +335,7 @@
                   </div>
                 </li>
                 <li>
-                  <textarea placeholder="Ваш вопрос" name="Question"></textarea>
+                  <textarea placeholder="Ваш вопрос" name="Question" aria-label="Ваш вопрос."></textarea>
                 </li>
               </ul>
             </div>

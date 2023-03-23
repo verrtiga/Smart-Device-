@@ -1,6 +1,11 @@
 .navigation {
-    margin-right: -16px;
-    margin-top: 11px;
+    margin-right: 72px;
+    margin-top: 5px;
+
+    @include vp-1023 {
+        margin-right: -13px;
+        margin-top: 11px;
+    }
 
     @include vp-767 {
         margin: 0;
@@ -46,6 +51,8 @@
 }
 
 .navigation__item--button {
+
+    margin-right: -12px;
     @include vp-1023 {
         display: none;
     }
@@ -58,7 +65,7 @@
 }
 
 .navigation__item:not(:last-child) {
-    margin-right: 150px;
+    margin-right: 157px;
 
     @include vp-1023 {
         margin: 0;
