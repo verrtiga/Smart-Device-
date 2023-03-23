@@ -56,8 +56,9 @@
 
   &__content {
     position: relative;
-
-    width: 600px;
+    margin-top: 63px;
+    margin-right: 20px;
+    width: 500px;
     padding: 40px;
 
     background-color: $color-deep-sky-blue;
@@ -70,8 +71,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 17px;
+    right: 12px;
     z-index: 1;
 
     width: 40px;
@@ -134,8 +135,9 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
+
 
 .fieldset-data-modal input {
   background: rgba(4, 20, 39, 0.15);
@@ -176,7 +178,7 @@
   background: rgba(4, 20, 39, 0.15);
   border: 0;
   border-radius: 3px;
-  padding: 15px 25px;
+  padding: 25px 16px;
   width: 100%;
   height: 155px;
   outline: none;
@@ -207,11 +209,11 @@
   font-family: $ff-robotocond;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
+  font-size: 30px;
+  line-height: 42px;
   color: $color-default-white;
   margin: 0;
-  margin-bottom: 15px;
+  padding-bottom: 5px;
 
   @include vp-767 {
     font-size: 30px;
@@ -236,12 +238,13 @@
 
 .form-ask-container-modal {
   display: block;
+  margin-bottom: 13px;
 }
 
 .form-ask-container-modal button {
   width: 100%;
   padding: 15px 0;
-  padding-left: 220px;
+  padding-left: 172px;
 }
 
 
@@ -250,8 +253,8 @@
   width: 15px;
   height: 15px;
   border: 1px solid $color-default-white;
-  left: 53px;
-  top: 570px;
+  left: 51px;
+  top: 554px;
 }
 
 .form-ask-container-modal label:hover .form-ask__control--modal {
@@ -290,7 +293,7 @@
   opacity: 0.8;
   display: block;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 14px;
   padding-left: 45px;
 
   @include vp-767 {
