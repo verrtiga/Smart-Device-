@@ -1117,8 +1117,12 @@ button,
   opacity: 0.5;
 }
 
+.navigation__item--button {
+  margin-right: -12px;
+}
+
 .navigation__item:not(:last-child) {
-  margin-right: 150px;
+  margin-right: 157px;
 }
 
 .navigation__icon {
@@ -1274,8 +1278,16 @@ button,
   margin-bottom: 7px;
 }
 
+.footer__item--section {
+  margin: 0;
+}
+
 .footer__item--office {
   margin-bottom: 8px;
+}
+
+.footer__item--social {
+  margin-right: 5px;
 }
 
 .footer__link {
@@ -1947,6 +1959,11 @@ button,
     width: 655px;
   }
 
+  .navigation {
+    margin-right: -13px;
+    margin-top: 11px;
+  }
+
   .navigation__item--button {
     display: none;
   }
@@ -1976,8 +1993,8 @@ button,
   .footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto;
-    grid-template-columns: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     padding: 50px 50px;
@@ -1986,11 +2003,12 @@ button,
 
   .footer-container {
     margin: 0;
-    margin-left: -8px;
+    margin-left: 47px;
   }
 
   .footer__block:not(:last-child) {
-    margin: 0;
+    margin-right: 0;
+    margin-top: 1px;
   }
 
   .footer__block--social {
@@ -2007,14 +2025,16 @@ button,
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: 2/1;
+    margin-bottom: -19px;
+    margin-left: 0;
   }
 
   .footer__block--office {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: 2/2;
-    margin-left: 102px;
-    margin-top: -5px;
+    margin-left: 16px;
+    margin-top: -2px;
   }
 
   .footer__list--section {
@@ -2027,7 +2047,11 @@ button,
   .footer__list--social {
     margin-left: auto;
     margin-top: 10px;
-    margin-right: -21px;
+    margin-right: -25px;
+  }
+
+  .footer__item--section {
+    margin-bottom: 10px;
   }
 
   .hero {
@@ -2122,9 +2146,9 @@ button,
   }
 
   .catalog__title {
-    padding-left: 25px;
-    padding-top: 19px;
-    padding-bottom: 18px;
+    padding-left: 51px;
+    padding-top: 38px;
+    padding-bottom: 37px;
   }
 
   .catalog-container {
@@ -2171,7 +2195,7 @@ button,
   }
 
   .form-container {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     margin-top: 16px;
   }
 

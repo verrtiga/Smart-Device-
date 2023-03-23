@@ -10,7 +10,7 @@
 
     @include vp-1023 {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         padding: 50px 50px;
         height: 465px;
@@ -23,7 +23,7 @@
 
     @include vp-1023 {
         margin: 0;
-        margin-left: -8px;
+        margin-left: 47px;
     }
 
     @include vp-767 {
@@ -50,7 +50,8 @@
         margin-right: 184px;
 
         @include vp-1023 {
-            margin: 0;
+            margin-right: 0;
+            margin-top: 1px;
         }
 
     }
@@ -71,6 +72,8 @@
 
     @include vp-1023 {
         grid-area: 2/1;
+        margin-bottom: -19px;
+        margin-left: 0;
     }
 }
 
@@ -80,8 +83,8 @@
 
     @include vp-1023 {
         grid-area: 2/2;
-        margin-left: 102px;
-        margin-top: -5px;
+        margin-left: 16px;
+        margin-top: -2px;
     }
 }
 
@@ -128,7 +131,7 @@
     @include vp-1023 {
         margin-left: auto;
         margin-top: 10px;
-        margin-right: -21px;
+        margin-right: -25px;
     }
 
     @include vp-767 {
@@ -148,10 +151,24 @@
     &:not(:nth-child(4)) {
         margin-bottom: 7px;
     }
+
+}
+
+.footer__item--section {
+    margin: 0;
+
+    @include vp-1023 {
+        margin-bottom: 10px;
+    }
+
 }
 
 .footer__item--office {
     margin-bottom: 8px;
+}
+
+.footer__item--social {
+    margin-right: 5px;
 }
 
 
