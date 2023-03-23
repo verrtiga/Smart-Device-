@@ -1070,8 +1070,8 @@ button,
 }
 
 .navigation {
-  margin-right: -16px;
-  margin-top: 11px;
+  margin-right: 72px;
+  margin-top: 5px;
 }
 
 .navigation__list {
@@ -1145,6 +1145,10 @@ button,
   justify-content: space-evenly;
 }
 
+.header-wrapper {
+  margin-right: -5px;
+}
+
 .header__link {
   display: inline-block;
   position: relative;
@@ -1191,15 +1195,19 @@ button,
 }
 
 .footer__block:not(:last-child) {
-  margin-right: 53px;
+  margin-right: 184px;
+}
+
+.footer__block--social {
+  margin-left: -47px;
 }
 
 .footer__block--section {
-  margin-left: 106px;
+  margin-left: -16px;
 }
 
 .footer__block--office {
-  margin-left: 191px;
+  margin-left: 108px;
 }
 
 .footer__title {
@@ -1241,9 +1249,9 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   height: 130px;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  -webkit-column-gap: 47px;
+  -moz-column-gap: 47px;
+  column-gap: 47px;
 }
 
 .footer__list--social {
@@ -1251,6 +1259,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-left: 25px;
 }
 
 .footer__item {
@@ -1261,8 +1270,12 @@ button,
   line-height: 135%;
 }
 
-.footer__item:not(:last-child) {
-  margin-bottom: 10px;
+.footer__item--section:not(:nth-child(4)) {
+  margin-bottom: 7px;
+}
+
+.footer__item--office {
+  margin-bottom: 8px;
 }
 
 .footer__link {
@@ -1477,6 +1490,7 @@ button,
   line-height: 51px;
   color: #041827;
   margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .about-container p:nth-of-type(3) {
@@ -1491,7 +1505,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #041827;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .about__additional {
@@ -1501,7 +1515,7 @@ button,
 .catalog {
   background-color: #041827;
   padding-top: 58px;
-  padding-bottom: 140px;
+  padding-bottom: 141px;
 }
 
 .catalog__card {
@@ -1516,8 +1530,8 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
   padding-top: 4px;
-  padding-left: 175px;
-  padding-bottom: 26px;
+  padding-left: 354px;
+  padding-bottom: 56px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1980,6 +1994,7 @@ button,
   }
 
   .footer__block--social {
+    position: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
