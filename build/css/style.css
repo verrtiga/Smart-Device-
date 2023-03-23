@@ -2298,14 +2298,36 @@ button,
     padding-left: 50px;
   }
 
+  .footer__block:not(:last-child) {
+    margin-top: -35px;
+  }
+
+  .footer__block--social {
+    margin: 0;
+  }
+
+  .footer__block--section {
+    margin-bottom: 0;
+  }
+
   .footer__list--social {
     margin: 0;
   }
 
   .footer {
     display: block;
-    padding: 0;
+    padding: 35px 0;
     height: auto;
+  }
+
+  .footer__item {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .footer__title {
+    font-size: 15px;
+    line-height: 16px;
   }
 
   .footer__block {
@@ -2315,21 +2337,22 @@ button,
 
   .footer__block--social {
     display: block;
+    margin-bottom: 65px;
   }
 
   .footer__block--office {
     margin: 0;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 25px;
   }
 
   .footer__block--section {
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 25px;
   }
 
   .footer-container {
@@ -2348,7 +2371,7 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 78px;
+    padding-left: 92px;
     padding-top: 20px;
   }
 
@@ -2394,6 +2417,10 @@ button,
 
   .footer__title--active + .footer__list {
     display: block;
+  }
+
+  .footer__item--office {
+    margin-bottom: 14px;
   }
 
   .hero {
@@ -2475,7 +2502,7 @@ button,
   .about-container {
     padding: 0;
     max-width: 270px;
-    padding-bottom: 78px;
+    padding-bottom: 81px;
     padding-top: 62px;
   }
 
@@ -2494,7 +2521,8 @@ button,
   }
 
   .about-container p:nth-of-type(3) {
-    display: inline;
+    display: inline-block;
+    margin-top: 7px;
   }
 
   .about-container p:nth-of-type(2) {
@@ -2508,7 +2536,7 @@ button,
   }
 
   .catalog {
-    padding-top: 27px;
+    padding-top: 45px;
     padding-bottom: 86px;
   }
 
@@ -2516,7 +2544,8 @@ button,
     font-size: 28px;
     line-height: 39px;
     padding: 0;
-    padding: 9px 15px;
+    padding: 2px 29px;
+    padding-bottom: 16px;
   }
 
   .catalog__title--desktop {

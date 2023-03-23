@@ -18,7 +18,7 @@
     @include vp-767 {
         padding: 0;
         max-width: 270px;
-        padding-bottom: 78px;
+        padding-bottom: 81px;
         padding-top: 62px;
     }
 
@@ -97,7 +97,8 @@
     display: none;
 
     @include vp-767 {
-        display: inline;
+        display: inline-block;
+        margin-top: 7px;
     }
 }
 

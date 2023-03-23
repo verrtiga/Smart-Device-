@@ -15,6 +15,7 @@
         padding: 50px 50px;
         height: 465px;
     }
+    
 
 }
 
@@ -53,6 +54,10 @@
             margin-right: 0;
             margin-top: 1px;
         }
+        
+        @include vp-767 {
+            margin-top: -35px;
+        }
 
     }
 }
@@ -64,6 +69,10 @@
         display: flex;
         grid-column: 1/3;
     }
+
+    @include vp-767 {
+        margin: 0;
+    }
 }
 
 .footer__block--section {
@@ -74,6 +83,10 @@
         grid-area: 2/1;
         margin-bottom: -19px;
         margin-left: 0;
+    }
+
+    @include vp-767 {
+        margin-bottom: 0;
     }
 }
 
@@ -197,9 +210,19 @@
 
     .footer {
         display: block;
-        padding: 0;
+        padding: 35px 0;
         height: auto;
 
+    }
+
+    .footer__item {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .footer__title {
+        font-size: 15px;
+        line-height: 16px;
     }
 
     .footer__block {
@@ -208,21 +231,22 @@
 
     .footer__block--social {
         display: block;
+        margin-bottom: 65px;
     }
 
     .footer__block--office {
         margin: 0;
         border-top: 1px solid rgba(248, 253, 255, 0.7);
         border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-        padding-top: 20px;
-        padding-left: 20px;
+        padding-top: 10px;
+        padding-left: 25px;
     }
 
     .footer__block--section {
         border-top: 1px solid rgba(248, 253, 255, 0.7);
         border-bottom: 1px solid rgba(248, 253, 255, 0.7);
         padding-top: 10px;
-        padding-left: 20px;
+        padding-left: 25px;
     }
 
     .footer-container {
@@ -239,7 +263,7 @@
     .footer__list--social {
         display: block;
         display: flex;
-        padding-left: 78px;
+        padding-left: 92px;
         padding-top: 20px;
     }
 
@@ -285,5 +309,9 @@
 
     .footer__title--active+.footer__list {
         display: block;
+    }
+
+    .footer__item--office {
+        margin-bottom: 14px;
     }
 }
