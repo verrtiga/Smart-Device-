@@ -739,6 +739,7 @@ button,
   margin-top: 63px;
   margin-right: 20px;
   width: 500px;
+  height: 610px;
   padding: 40px;
   background-color: #00b2ff;
 }
@@ -803,7 +804,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .fieldset-data-modal input {
@@ -969,8 +970,8 @@ button,
   opacity: 0.8;
   display: block;
   margin: 0;
-  margin-top: 14px;
-  padding-left: 45px;
+  margin-top: 16px;
+  padding-left: 38px;
 }
 
 .custom-input,
@@ -1130,7 +1131,7 @@ button,
 
 .navigation__icon {
   position: absolute;
-  left: -39px;
+  left: -36px;
 }
 
 .header {
@@ -1153,7 +1154,7 @@ button,
 }
 
 .header-wrapper {
-  margin-right: -5px;
+  margin-right: -9px;
 }
 
 .header__link {
@@ -1187,7 +1188,8 @@ button,
 }
 
 .footer-container {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+  margin-left: 9px;
 }
 
 .footer__link--social {
@@ -1202,7 +1204,7 @@ button,
 }
 
 .footer__block:not(:last-child) {
-  margin-right: 184px;
+  margin-right: 190px;
 }
 
 .footer__block--social {
@@ -1210,7 +1212,7 @@ button,
 }
 
 .footer__block--section {
-  margin-left: -16px;
+  margin-left: -31px;
 }
 
 .footer__block--office {
@@ -1439,8 +1441,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #00b2ff;
-  margin-top: 19px;
-  margin-bottom: 15px;
 }
 
 .advantages__description {
@@ -2107,6 +2107,7 @@ button,
   }
 
   .advantages__title {
+    margin: 0;
     line-height: 34px;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -2495,20 +2496,35 @@ button,
     font-size: 20px;
     line-height: 28px;
     margin: 0;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 16px;
+    margin-left: -4px;
   }
 
   .advantages__description {
     font-size: 14px;
     line-height: 19px;
+    margin-left: -5px;
+    margin-top: -8px;
+  }
+
+  .advantages__item-container--big {
+    min-height: 340px;
+  }
+
+  .advantages__icon {
+    margin-left: -7px;
+    margin-top: -8px;
+    margin-bottom: 9px;
+  }
+
+  .advantages__description--small {
+    padding-top: 7px;
   }
 
   .about-container {
     padding: 0;
     max-width: 270px;
     padding-bottom: 81px;
-    padding-top: 30px;
   }
 
   .about-container h2::before {
