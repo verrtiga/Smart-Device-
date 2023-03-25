@@ -1432,6 +1432,7 @@ button,
 
 .advantages__title {
   margin: 0;
+  margin-top: 17px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1445,6 +1446,7 @@ button,
 
 .advantages__description {
   margin: 0;
+  margin-top: 13px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2109,8 +2111,12 @@ button,
   .advantages__title {
     margin: 0;
     line-height: 34px;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    margin-top: 11px;
+    margin-bottom: -3px;
+  }
+
+  .advantages__description--small {
+    margin-top: 6px;
   }
 
   .about-container {
@@ -2501,6 +2507,7 @@ button,
   }
 
   .advantages__description {
+    margin: 0;
     font-size: 14px;
     line-height: 19px;
     margin-left: -5px;
@@ -2518,7 +2525,7 @@ button,
   }
 
   .advantages__description--small {
-    padding-top: 7px;
+    margin: 0;
   }
 
   .about-container {
