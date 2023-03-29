@@ -120,7 +120,7 @@
 
 
 .catalog__card--production {
-    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-desk.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-desk.jpg");
     background-color: $color-deep-sky-blue;
     width: 350px;
     height: 650px;
@@ -128,14 +128,14 @@
     background-repeat: no-repeat;
 
     @include vp-1023 {
-        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-tablet.jpg");
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-tablet.jpg");
         background-color: $color-deep-sky-blue;
         width: 670px;
         height: 250px;
     }
 
     @include vp-767 {
-        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/production-catalog-mobile.jpg");
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
         width: 270px;
         height: 250px;
@@ -144,21 +144,21 @@
 }
 
 .catalog__card--install {
-    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-desk.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-desk.jpg");
     background-color: $color-deep-sky-blue;
     width: 350px;
     height: 650px;
 
 
     @include vp-1023 {
-        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-tablet.jpg");
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-tablet.jpg");
         background-color: $color-deep-sky-blue;
         width: 670px;
         height: 250px;
     }
 
     @include vp-767 {
-        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/installation-catalog-mobile.jpg");
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
         width: 270px;
         height: 250px;
@@ -166,20 +166,20 @@
 }
 
 .catalog__card--complect {
-    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-desk.jpg");
+    background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-desk.jpg");
     background-color: $color-deep-sky-blue;
     width: 350px;
     height: 650px;
 
     @include vp-1023 {
-        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-tablet.jpg");
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-tablet.jpg");
         background-color: $color-deep-sky-blue;
         width: 670px;
         height: 250px;
     }
 
     @include vp-767 {
-        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../../img/accessories-catalog-mobile.jpg");
+        background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
         width: 270px;
         height: 250px;
@@ -198,7 +198,7 @@
     height: 60px;
     background-color: $color-deep-sky-blue;
     border-radius: 3px;
-    background-image: url(../../img/svg/arrow-catalog.svg);
+    background-image: url(../img/svg/arrow-catalog.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 8px;
