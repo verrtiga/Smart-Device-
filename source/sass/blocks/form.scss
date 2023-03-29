@@ -271,7 +271,7 @@
     width: 510px;
     height: 285px;
     position: absolute;
-    background-image: url("../../img/form-airplane-desk.png");
+    background-image: url("../img/form-airplane-desk.png");
     left: 347px;
     top: 250px;
 
@@ -350,7 +350,7 @@
 .form-ask__checkbox[type="checkbox"]:checked+.form-ask__control::after {
     content: "";
     position: absolute;
-    background-image: url(../../img/svg/check-icon.svg);
+    background-image: url(../img/svg/check-icon.svg);
     background-repeat: no-repeat;
     top: 3px;
     left: 2px;
