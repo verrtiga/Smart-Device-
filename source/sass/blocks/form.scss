@@ -248,20 +248,16 @@
 
 .fieldset-container {
     width: 585px;
-    height: 420px;
     margin-left: auto;
     margin-right: 354px;
     padding-top: 164px;
 
     @include vp-1023 {
-        padding: 0 50px;
-        width: 770px;
         padding-top: 28px;
     }
 
     @include vp-767 {
-        width: 320px;
-        padding: 39px 25px;
+        padding: 39px 0;
     }
 
 }
