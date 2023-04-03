@@ -1,11 +1,3 @@
-.wrapper {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 
   .header,
   .footer {
@@ -15,7 +7,6 @@
   main {
     flex-grow: 1;
   }
-}
 
 .rouble {
   font-family: $ff-rouble;
