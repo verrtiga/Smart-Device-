@@ -1,54 +1,4 @@
-.hero {
-    max-width: 100%;
-    height: 880px;
 
-    @include vp-1023 {
-        height: 539px;
-    }
-
-    @include vp-767 {
-        height: 492px;
-    }
-}
-
-// .hero-container::before {
-//     content: "";
-//     display: block;
-//     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-desktop.jpg");
-//     background-size: cover;
-//     background-color: $color-black-pearl;
-//     width: 100%;
-//     height: 880px;
-    
-
-//     // @include retina {
-//     //     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-desktop@2x.jpg");
-//     //     background-size: cover;
-//     // }
-
-//     @include vp-1023 {
-//         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet.jpg");
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//         height: 680px;
-
-//         // @include retina {
-//         //     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-tablet@2x.jpg");
-//         // }
-//     }
-
-//     @include vp-767 {
-//         background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-mobile.jpg");
-//         background-size: cover;
-//         height: 631px;
-
-//         // @include retina {
-//         //     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/main-background-mobile@2x.jpg");
-
-//         // }
-//     }
-
-// }
 
 .hero-container {
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-desktop.jpg");
@@ -61,14 +11,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
+
     @include vp-1023 {
-        left: 0;
-        padding: 0 50px;
+        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 640px;
+
 
     }
 
     @include vp-767 {
-        padding: 0 25px;
+        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-mobile.jpg");
+        background-size: cover;
+        min-height: 560px;
         margin-top: 79px;
     }
 }
@@ -89,11 +47,12 @@
     margin-top: 20px;
 
     @include vp-1023 {
-        font-size: 63px;
+        font-size: 64px;
         line-height: 75px;
+        letter-spacing: 0.07em;
         margin: 0;
-        margin-top: 77px;
-        margin-left: 4px;
+        margin-top: -30px;
+        margin-right: 96px;;
     }
 
     @include vp-767 {
@@ -117,8 +76,10 @@
     margin-right: 364px;
 
     @include vp-1023 {
+        margin: 0;
         margin-left: 0;
-        margin-bottom: 58px;
+        margin-bottom: 35px;
+        margin-right: 62px;
     }
 
     @include vp-767 {
@@ -141,7 +102,8 @@
 
     @include vp-1023 {
         margin: 0;
-        margin-left: 45px;
+        margin-right: 170px;
+        margin-top: 20px;
     }
 
     @include vp-767 {

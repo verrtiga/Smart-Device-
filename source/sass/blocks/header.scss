@@ -16,9 +16,20 @@
     display: flex;
     padding-top: 30px;
     padding-bottom: 29px;
+    min-height: 120px;;
 
     @include vp-1023 {
         justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 100px;
+    }
+}
+
+.header-wrapper {
+    
+    @include vp-1023 {
+    padding-top: 20px;
     }
 }
 

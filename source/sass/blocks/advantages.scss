@@ -7,6 +7,10 @@
     gap: 30px;
     margin-top: 120px;
 
+    @include vp-1023 {
+        margin-top: 80px;
+    }
+
     @include vp-767 {
         display: block;
         gap: 0;
@@ -39,7 +43,8 @@
     }
 
     @include vp-1023 {
-        height: 360px;
+        padding: 32px 38px;
+        min-height: 360px;
         min-width: 320px;
     }
 
@@ -136,7 +141,7 @@
 .advantages__description--small {
 
     @include vp-1023 {
-        margin-top: 6px;
+        margin-top: 8px;
 
     }
 
