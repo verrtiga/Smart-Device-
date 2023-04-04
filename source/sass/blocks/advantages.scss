@@ -14,6 +14,7 @@
     @include vp-767 {
         display: block;
         gap: 0;
+        margin-top: 50px;
     }
 }
 
@@ -49,9 +50,15 @@
     }
 
     @include vp-767 {
-        height: 325px;
+        min-height: 340px;
         min-width: 270px;
         padding: 30px 30px;
+    }
+}
+
+.advantages__item-container--small {
+    @include vp-767 {
+        min-height: 325px;
     }
 }
 
@@ -86,7 +93,7 @@
         font-size: 20px;
         line-height: 28px;
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 19px;
         margin-left: -4px;
     }
 
@@ -129,8 +136,8 @@
 
 
         margin-left: -7px;
-        margin-top: -8px;
-        margin-bottom: 9px;
+        margin-top: -9px;
+        margin-bottom: 12px;
     }
 }
 
