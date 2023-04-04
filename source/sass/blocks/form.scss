@@ -36,7 +36,9 @@
     line-height: 51px;
     color: $color-default-white;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
+    margin-top: 4px;
+    margin-right: -7px;
 
     @include vp-1023 {
         margin-bottom: 10px;
@@ -146,7 +148,7 @@
     background: rgba(4, 20, 39, 0.15);
     border: 0;
     border-radius: 3px;
-    padding: 27px 12px;
+    padding: 26px 16px;
     width: 580px;
     height: 155px;
     outline: none;
@@ -222,7 +224,6 @@
     color: $color-default-white;
     opacity: 0.8;
     display: block;
-    width: 320px;
     margin: 0;
     padding-left: 75px;
     padding-top: 12px;
@@ -247,10 +248,10 @@
 }
 
 .fieldset-container {
-    width: 585px;
+    width: 625px;
     margin-left: auto;
-    margin-right: 354px;
-    padding-top: 164px;
+    margin-right: 357px;
+    padding-top: 162px;
 
     @include vp-1023 {
         padding-top: 28px;
@@ -318,8 +319,9 @@
     width: 15px;
     height: 15px;
     border: 1px solid $color-default-white;
-    left: 49px;
-    top: 19px;
+    left: 52px;
+    top: 20px;
+
 
     @include vp-767 {
         left: -31px;

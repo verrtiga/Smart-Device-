@@ -634,7 +634,7 @@ main {
 
 .wrapper {
   width: 100%;
-  max-width: 1222px;
+  max-width: 1302px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -1115,6 +1115,7 @@ main {
 }
 
 .navigation__item--button {
+  margin-left: 5px;
   margin-right: -12px;
 }
 
@@ -1149,10 +1150,6 @@ main {
   padding-bottom: 29px;
 }
 
-.header-wrapper {
-  margin-left: -37px;
-}
-
 .header__link {
   display: inline-block;
   position: relative;
@@ -1180,12 +1177,10 @@ main {
   padding: 30px 0;
   font-size: 16px;
   color: #ffffff;
-  height: 280px;
 }
 
 .footer-container {
   margin-bottom: 36px;
-  margin-left: 9px;
 }
 
 .footer-wrapper {
@@ -1206,19 +1201,15 @@ main {
 }
 
 .footer__block:not(:last-child) {
-  margin-right: 190px;
-}
-
-.footer__block--social {
-  margin-left: -47px;
+  margin-right: 158px;
 }
 
 .footer__block--section {
-  margin-left: -31px;
+  margin-left: 3px;
 }
 
 .footer__block--office {
-  margin-left: 108px;
+  margin-left: -33px;
 }
 
 .footer__title {
@@ -1254,15 +1245,22 @@ main {
 }
 
 .footer__list--section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: 130px;
-  -webkit-column-gap: 47px;
-  -moz-column-gap: 47px;
-  column-gap: 47px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.footer-area-left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.footer-area-right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 .footer__list--social {
@@ -1270,7 +1268,7 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-left: 25px;
+  margin-left: 16px;
 }
 
 .footer__item {
@@ -1281,12 +1279,9 @@ main {
   line-height: 135%;
 }
 
-.footer__item--section:not(:nth-child(4)) {
-  margin-bottom: 7px;
-}
-
 .footer__item--section {
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .footer__item--office {
@@ -1407,7 +1402,7 @@ main {
 .advantages__item-container {
   border: 1px solid #e5e5e5;
   border-left: 5px solid #00b2ff;
-  padding: 35px 39px;
+  padding: 38px 42px;
   min-height: 300px;
 }
 
@@ -1460,9 +1455,9 @@ main {
 .about-container {
   position: relative;
   margin: 0 auto;
-  padding-left: 248px;
+  padding-left: 250px;
   padding-top: 113px;
-  padding-bottom: 121px;
+  padding-bottom: 124px;
 }
 
 .about-container h2::before {
@@ -1540,7 +1535,6 @@ main {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
   padding-top: 4px;
-  padding-left: 354px;
   padding-bottom: 56px;
   font-style: normal;
   font-weight: 400;
@@ -1646,7 +1640,9 @@ main {
   line-height: 51px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
+  margin-top: 4px;
+  margin-right: -7px;
 }
 
 .form-container p {
@@ -1735,7 +1731,7 @@ main {
   background: rgba(4, 20, 39, 0.15);
   border: 0;
   border-radius: 3px;
-  padding: 27px 12px;
+  padding: 26px 16px;
   width: 580px;
   height: 155px;
   outline: none;
@@ -1802,7 +1798,6 @@ main {
   color: #ffffff;
   opacity: 0.8;
   display: block;
-  width: 320px;
   margin: 0;
   padding-left: 75px;
   padding-top: 12px;
@@ -1815,10 +1810,10 @@ main {
 }
 
 .fieldset-container {
-  width: 585px;
+  width: 625px;
   margin-left: auto;
-  margin-right: 354px;
-  padding-top: 164px;
+  margin-right: 357px;
+  padding-top: 162px;
 }
 
 .form-ask::after {
@@ -1860,8 +1855,8 @@ main {
   width: 15px;
   height: 15px;
   border: 1px solid #ffffff;
-  left: 49px;
-  top: 19px;
+  left: 52px;
+  top: 20px;
 }
 
 .form-ask-container label:hover .form-ask__control {
