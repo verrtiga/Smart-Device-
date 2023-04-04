@@ -2024,7 +2024,7 @@ main {
   }
 
   .footer {
-    max-height: 465px;
+    min-height: 465px;
     padding-top: 50px;
     padding-bottom: 65px;
   }
@@ -2058,7 +2058,7 @@ main {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: 2/1;
-    padding-top: 19px;
+    padding-top: 36px;
     margin-left: 0;
   }
 
@@ -2067,7 +2067,12 @@ main {
     -ms-grid-column: 2;
     grid-area: 2/2;
     margin-left: 16px;
-    margin-top: 26px;
+    margin-top: 35px;
+  }
+
+  .footer__title {
+    margin: 0;
+    margin-bottom: 20px;
   }
 
   .footer__list--section {
@@ -2088,7 +2093,7 @@ main {
   }
 
   .footer__item--section {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .footer__item--office {
@@ -2179,7 +2184,7 @@ main {
 
   .catalog {
     padding-top: 19px;
-    padding-bottom: 75px;
+    padding-bottom: 74px;
   }
 
   .catalog__card:not(:last-child) {
@@ -2276,6 +2281,11 @@ main {
 
 @media (max-width: 767px) {
   .container {
+    padding: 0 25px;
+  }
+
+  .wrapper {
+    width: 100%;
     padding: 0 25px;
   }
 
