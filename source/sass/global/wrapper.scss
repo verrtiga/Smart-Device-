@@ -1,14 +1,17 @@
 .wrapper {
+  width: 100%;
+  max-width: 1302px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include vp-1023 {
     width: 100%;
-    max-width: 1222px;
-    margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 50px;
 
-    // @include vp-1023 {
-        
-    // }
+  }
 
-    // @include vp-767 {
-
-    // }
+  @include vp-767 {
+    width: 100%;
+    padding: 0 25px;
+  }
 }
