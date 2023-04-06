@@ -211,7 +211,6 @@
 
     @include vp-1023 {
         margin-top: -6px;
-        margin-left: 36px;
     }
 }
 
@@ -229,9 +228,8 @@
     padding-top: 12px;
 
     @include vp-767 {
-        width: 234px;
         padding-left: 28px;
-        padding-top: 0;
+        padding-top: 25px;
     }
 }
 
@@ -325,8 +323,8 @@
 
 
     @include vp-767 {
-        left: -31px;
-        top: 28px;
+        left: -266px;
+        top: 62px;
         right: 0;
         bottom: 0;
 

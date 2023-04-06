@@ -72,8 +72,6 @@
 .catalog-container {
     display: flex;
     justify-content: space-evenly;
-    max-width: 1220px;
-    margin: 0 auto;
 
     @include vp-1023 {
         display: block;
@@ -133,7 +131,7 @@
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
-        width: 270px;
+        width: 100%;
         height: 250px;
     }
 
@@ -144,6 +142,8 @@
     background-color: $color-deep-sky-blue;
     width: 350px;
     height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 
     @include vp-1023 {
@@ -156,7 +156,7 @@
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
-        width: 270px;
+        width: 100%;
         height: 250px;
     }
 }
@@ -166,6 +166,8 @@
     background-color: $color-deep-sky-blue;
     width: 350px;
     height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-tablet.jpg");
@@ -177,7 +179,7 @@
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
-        width: 270px;
+        width: 100%;
         height: 250px;
     }
 }

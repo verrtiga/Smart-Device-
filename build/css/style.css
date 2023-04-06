@@ -1602,8 +1602,6 @@ main {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  max-width: 1220px;
-  margin: 0 auto;
 }
 
 .catalog__name {
@@ -1637,6 +1635,8 @@ main {
   background-color: #00b2ff;
   width: 350px;
   height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .catalog__card--complect {
@@ -1646,6 +1646,8 @@ main {
   background-color: #00b2ff;
   width: 350px;
   height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .catalog__link {
@@ -2280,7 +2282,6 @@ main {
 
   .form-ask-container label {
     margin-top: -6px;
-    margin-left: 36px;
   }
 
   .form__img {
@@ -2657,7 +2658,7 @@ main {
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-mobile.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-mobile.jpg");
     background-color: #00b2ff;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -2666,7 +2667,7 @@ main {
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-mobile.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-mobile.jpg");
     background-color: #00b2ff;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -2675,7 +2676,7 @@ main {
     background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-mobile.jpg");
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-mobile.jpg");
     background-color: #00b2ff;
-    width: 270px;
+    width: 100%;
     height: 250px;
   }
 
@@ -2730,9 +2731,8 @@ main {
   }
 
   .form-ask__description {
-    width: 234px;
     padding-left: 28px;
-    padding-top: 0;
+    padding-top: 25px;
   }
 
   .fieldset-container {
@@ -2750,8 +2750,8 @@ main {
   }
 
   .form-ask__control {
-    left: -31px;
-    top: 28px;
+    left: -266px;
+    top: 62px;
     right: 0;
     bottom: 0;
   }
