@@ -86,27 +86,28 @@
 
 
 .catalog__name {
-    position: absolute;
     margin: 0;
+    margin-top: 48px;
+    margin-left: 39px;
+    ;
     font-family: $ff-robotocond;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    top: 48px;
-    left: 41px;
     color: $color-default-white;
 
     @include vp-1023 {
-        top: 37px;
-        left: 46px;
+        margin: 0;
+        padding-top: 36px;
+        padding-left: 44px;
     }
 
     @include vp-767 {
         font-size: 18px;
         line-height: 30px;
-        top: 26px;
-        left: 30px;
+        padding-left: 30px;
+        padding-top: 30px;
     }
 
 }
@@ -117,22 +118,22 @@
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-desk.jpg");
     background-color: $color-deep-sky-blue;
     width: 350px;
-    height: 650px;
+    min-height: 650px;
     background-size: cover;
     background-repeat: no-repeat;
 
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-tablet.jpg");
         background-color: $color-deep-sky-blue;
-        width: 670px;
-        height: 250px;
+        width: 100%;
+        min-height: 250px;
     }
 
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/production-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
         width: 100%;
-        height: 250px;
+        min-height: 250px;
     }
 
 }
@@ -141,7 +142,7 @@
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-desk.jpg");
     background-color: $color-deep-sky-blue;
     width: 350px;
-    height: 650px;
+    min-height: 650px;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -149,15 +150,15 @@
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-tablet.jpg");
         background-color: $color-deep-sky-blue;
-        width: 670px;
-        height: 250px;
+        width: 100%;
+        min-height: 250px;
     }
 
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/installation-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
         width: 100%;
-        height: 250px;
+        min-height: 250px;
     }
 }
 
@@ -165,22 +166,22 @@
     background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-desk.jpg");
     background-color: $color-deep-sky-blue;
     width: 350px;
-    height: 650px;
+    min-height: 650px;
     background-size: cover;
     background-repeat: no-repeat;
 
     @include vp-1023 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-tablet.jpg");
         background-color: $color-deep-sky-blue;
-        width: 670px;
-        height: 250px;
+        width: 100%;
+        min-height: 250px;
     }
 
     @include vp-767 {
         background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5)), url("../img/accessories-catalog-mobile.jpg");
         background-color: $color-deep-sky-blue;
         width: 100%;
-        height: 250px;
+        min-height: 250px;
     }
 }
 

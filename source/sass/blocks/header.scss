@@ -56,10 +56,10 @@
 
 .header__logo {
     height: 55px;
-    width: 215px;
+   max-width: 215px;
 
     @include vp-767 {
-        width: 35px;
+        max-width: 35px;
         height: 35px;
     }
 }
