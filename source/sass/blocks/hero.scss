@@ -118,6 +118,10 @@
     }
 }
 
+.hero__link:focus {
+   border: 2px solid $color-black-pearl;
+}
+
 .hero__button--mobile {
 
     @include vp-767 {

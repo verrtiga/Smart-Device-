@@ -17,6 +17,15 @@
 
 .catalog__card {
     position: relative;
+    cursor: pointer;
+}
+
+.catalog__card:hover {
+ opacity: 0.5;
+}
+
+.catalog__card:focus {
+  outline: 2px solid $color-deep-sky-blue;
 }
 
 .catalog__card:not(:last-child) {
