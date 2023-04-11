@@ -661,6 +661,10 @@ main {
   color: #f2f5f6;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #000000;
   border: none;
   cursor: pointer;
@@ -790,6 +794,10 @@ main {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__close-btn:hover {
+  opacity: 0.5;
 }
 
 .form-container-modal {
@@ -1365,6 +1373,10 @@ main {
 
 .footer__link:hover {
   color: #00b2ff;
+}
+
+.footer__link--disabled {
+  pointer-events: none;
 }
 
 .hero-container {
