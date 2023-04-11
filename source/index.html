@@ -190,7 +190,7 @@
               </li>
               <li>
                 <div class="input-group" data-validate-type="phone" data-required>
-                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" aria-label="Телефон." required>
+                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" minlength="18" aria-label="Телефон." pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
                 </div>
               </li>
               <li class="fieldset-data__item--comment">
@@ -290,22 +290,22 @@
       <h3 class="footer__title footer__title--disable">Наш офис</h3>
       <ul class="footer__list">
         <li class="footer__item footer__item--office">
-          <a class="footer__link" href="#">
+          <a class="footer__link footer__link--disabled" href="#">
             г. Мытищи, Олимпийский проспект,<br>д.10
           </a>
         </li>
         <li class="footer__item footer__item--office">
-          <a class="footer__link" href="+74955894050">
+          <a class="footer__link" href="tel:+74955894050">
             +7 (495) 589-40-50
           </a>
         </li>
         <li class="footer__item footer__item--office">
-          <a class="footer__link" href="+79253895829">
+          <a class="footer__link" href="tel:+79253895829">
             +7 (925) 389-58-29
           </a>
         </li>
         <li class="footer__item footer__item--office">
-          <a class="footer__link" href="+79253647813">
+          <a class="footer__link" href="tel:+79253647813">
             +7 (925) 364-78-13
           </a>
         </li>

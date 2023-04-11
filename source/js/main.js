@@ -2,6 +2,7 @@ import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
 import { initPhoneInput } from './modules/form-validate/init-phone-input';
+import { Validator } from './modules/form-validate/validator';
 
 // ---------------------------------
 
@@ -12,8 +13,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Mask-input 
 
-  let parent = document.querySelector('.input-group');
+  
 
+  let parent = document.querySelector('.input-group');
   initPhoneInput(parent);
 
   // Akkordeon

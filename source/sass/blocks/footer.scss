@@ -252,6 +252,9 @@
     color: $color-deep-sky-blue;
 }
 
+.footer__link--disabled {
+    pointer-events: none;
+}
 
 
 @include vp-767 {

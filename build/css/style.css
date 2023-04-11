@@ -618,10 +618,6 @@ main {
   transition: none !important;
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-
 .main {
   background-color: #ffffff;
 }
@@ -665,6 +661,10 @@ main {
   color: #f2f5f6;
   font-weight: 700;
   text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #000000;
   border: none;
   cursor: pointer;
@@ -1371,6 +1371,10 @@ main {
   color: #00b2ff;
 }
 
+.footer__link--disabled {
+  pointer-events: none;
+}
+
 .hero-container {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/main-background-desktop.jpg");
   background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-desktop.jpg");
@@ -1438,8 +1442,8 @@ main {
   margin-right: 560px;
 }
 
-.hero__link:focus {
-  border: 2px solid #041827;
+.hero__button:focus {
+  outline: 2px solid #ffffff;
 }
 
 .hero__button--hidden {
