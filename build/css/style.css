@@ -796,6 +796,10 @@ main {
   pointer-events: auto;
 }
 
+.modal__close-btn:hover {
+  opacity: 0.5;
+}
+
 .form-container-modal {
   margin-bottom: 38px;
 }
