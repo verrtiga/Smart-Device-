@@ -20,20 +20,37 @@ window.addEventListener('DOMContentLoaded', () => {
   // Akkordeon
 
   const titles = document.querySelectorAll('.footer__title');
+let prevTitle = null;
 
-  titles.forEach((title) => {
-    title.addEventListener('click', () => {
-      if (title.classList.contains('footer__title--disable')) {
-        title.classList.remove('footer__title--disable');
-        title.classList.add('footer__title--active');
+titles.forEach((title) => {
+  title.addEventListener('click', () => {
+    if (title.classList.contains('footer__title--disable')) {
+      // Открыть заголовок
+      title.classList.remove('footer__title--disable');
+      title.classList.add('footer__title--active');
 
-      } else {
-        title.classList.add('footer__title--disable');
-        title.classList.remove('footer__title--active');
+      // Закрыть предыдущий заголовок, если он есть
+      if (prevTitle && prevTitle !== title) {
+        prevTitle.classList.add('footer__title--disable');
+        prevTitle.classList.remove('footer__title--active');
       }
-    });
-    // title.removeEventListener('click')
+
+      // Сохранить текущий заголовок как предыдущий
+      prevTitle = title;
+
+    } else {
+      // Закрыть заголовок
+      title.classList.add('footer__title--disable');
+      title.classList.remove('footer__title--active');
+      
+      // Сбросить переменную prevTitle, если закрыт последний открытый заголовок
+      if (prevTitle === title) {
+        prevTitle = null;
+      }
+    }
   });
+});
+
 
   // About-additional
 
