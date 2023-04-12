@@ -1088,7 +1088,7 @@ main {
 }
 
 .navigation {
-  margin-left: 194px;
+  margin-left: auto;
   margin-top: 6px;
 }
 
@@ -1139,7 +1139,7 @@ main {
 
 .navigation__item--button {
   margin-left: 4px;
-  margin-right: -12px;
+  margin-right: 58px;
 }
 
 .navigation__item:not(:last-child) {
@@ -1172,6 +1172,10 @@ main {
   padding-top: 30px;
   padding-bottom: 29px;
   min-height: 120px;
+}
+
+.header-wrapper {
+  margin-right: 20px;
 }
 
 .header__link {
@@ -1892,12 +1896,14 @@ main {
   padding-bottom: 20px;
 }
 
-.form-ask::after {
+.fieldset-container::after {
   content: "";
   width: 510px;
+  min-width: 100%;
   height: 285px;
   position: absolute;
   background-image: url("../img/form-airplane-desk.png");
+  background-repeat: no-repeat;
   left: 347px;
   top: 250px;
 }
@@ -2003,7 +2009,7 @@ main {
 */
 
 @media (max-width: 1919px) {
-  .form-ask::after {
+  .fieldset-container::after {
     left: 2px;
   }
 }
@@ -2060,6 +2066,7 @@ main {
   }
 
   .header-wrapper {
+    margin: 0;
     padding-top: 20px;
   }
 
@@ -2317,7 +2324,7 @@ main {
     padding-top: 28px;
   }
 
-  .form-ask::after {
+  .fieldset-container::after {
     width: 0;
     height: 0;
   }
@@ -2402,6 +2409,7 @@ main {
 
   .footer-wrapper {
     display: block;
+    padding: 0;
   }
 
   .footer__block--section {
@@ -2431,10 +2439,21 @@ main {
   .footer__block {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    padding-left: 25px;
   }
 
   .footer__block--social {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0;
     margin-bottom: 29px;
   }
@@ -2458,7 +2477,6 @@ main {
     margin: 0;
     padding: 0;
     padding-top: 0;
-    padding-left: 25px;
   }
 
   .footer__list {
@@ -2470,14 +2488,15 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 68px;
+    padding-left: 30px;
     padding-top: 21px;
   }
 
   .footer__title--disable::after {
     content: "";
     position: absolute;
-    left: 280px;
+    left: auto;
+    right: 25px;
     width: 15px;
     height: 1px;
     background-color: #c4c4c4;
@@ -2486,7 +2505,8 @@ main {
   .footer__title--disable::before {
     content: "";
     position: absolute;
-    left: 280px;
+    left: auto;
+    right: 25px;
     width: 15px;
     height: 1px;
     -webkit-transform: rotate(90deg);
@@ -2498,7 +2518,8 @@ main {
   .footer__title--active::after {
     content: "";
     position: absolute;
-    left: 280px;
+    left: auto;
+    right: 25px;
     width: 15px;
     height: 1px;
     background-color: #c4c4c4;
@@ -2523,10 +2544,11 @@ main {
   }
 
   .hero-container {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/main-background-mobile.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-mobile.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/main-background-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet.jpg");
     background-size: cover;
+    background-position: top;
     min-height: 560px;
   }
 
