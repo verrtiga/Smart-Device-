@@ -11,6 +11,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
 
 
 
@@ -19,13 +21,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 640px;
+        padding-bottom: 20px;
+        padding-top: 20px;
 
 
     }
 
     @include vp-767 {
-        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-mobile.jpg");
+        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet.jpg");
         background-size: cover;
+        background-position: top;
         min-height: 560px;
     }
 }
@@ -112,6 +117,10 @@
         margin: 0;
         margin-top: 26px;
     }
+}
+
+.hero__button:focus {
+   outline: 2px solid $color-default-white;
 }
 
 .hero__button--mobile {

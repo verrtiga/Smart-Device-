@@ -9,14 +9,12 @@
     @include vp-1023 {
         padding: 0;
         padding-left: 175px;
-        max-width: 674px;
         padding-bottom: 82px;
         margin-top: 73px;
     }
 
     @include vp-767 {
         padding: 0;
-        max-width: 270px;
         padding-bottom: 81px;
         margin-top: 47px;
     }
