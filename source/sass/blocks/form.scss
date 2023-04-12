@@ -262,12 +262,14 @@
 
 }
 
-.form-ask::after {
+.fieldset-container::after {
     content: "";
     width: 510px;
+    min-width: 100%;
     height: 285px;
     position: absolute;
     background-image: url("../img/form-airplane-desk.png");
+    background-repeat: no-repeat;
     left: 347px;
     top: 250px;
 

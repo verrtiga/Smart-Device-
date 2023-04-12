@@ -16,7 +16,8 @@
     display: flex;
     padding-top: 30px;
     padding-bottom: 29px;
-    min-height: 120px;;
+    min-height: 120px;
+    ;
 
     @include vp-1023 {
         justify-content: space-between;
@@ -31,9 +32,12 @@
 }
 
 .header-wrapper {
-    
+
+    margin-right: 20px;
+
     @include vp-1023 {
-    padding-top: 20px;
+        margin: 0;
+        padding-top: 20px;
     }
 
     @include vp-767 {
@@ -56,7 +60,7 @@
 
 .header__logo {
     height: 55px;
-   max-width: 215px;
+    max-width: 215px;
 
     @include vp-767 {
         max-width: 35px;

@@ -28,8 +28,9 @@
     }
 
     @include vp-767 {
-        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-mobile.jpg");
+        background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/main-background-tablet.jpg");
         background-size: cover;
+        background-position: top;
         min-height: 560px;
     }
 }
