@@ -80,6 +80,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 19px;
     grid-template-rows: auto;
 
     @include vp-767 {
@@ -92,13 +93,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    max-width: 275px;
     line-height: 22px;
     color: $color-default-white;
 }
 
 .fieldset-data li:not(:last-child) {
     margin-bottom: 20px;
-    margin-right: 36px;
 
     @include vp-1023 {
         margin-right: 29px;
@@ -262,7 +263,7 @@
 
 }
 
-.fieldset-container::after {
+.form::after {
     content: "";
     width: 510px;
     height: 285px;

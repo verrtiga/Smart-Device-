@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" crossorigin="">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -186,22 +186,22 @@
           <div class=" fieldset-data">
             <ul>
               <li>
-                <input type="text" minlength="1" placeholder="Имя" name="Name" aria-label="Имя." required>
+                <input type="text" minlength="1" placeholder="Имя" name="Name" aria-label="Имя." tabindex="1"required>
               </li>
               <li>
                 <div class="input-group" data-validate-type="phone" data-required>
-                  <input data-validate-field="tel" name="Phone" type="tel" id="phone" placeholder="Телефон" minlength="18" aria-label="Телефон." pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                  <input data-validate-field="tel" tabindex="2" name="Phone" type="tel" id="phone" placeholder="Телефон" minlength="18" aria-label="Телефон." pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
                 </div>
               </li>
               <li class="fieldset-data__item--comment">
-                <textarea placeholder="Ваш вопрос" name="Question" aria-label="Ваш вопрос."></textarea>
+                <textarea placeholder="Ваш вопрос" name="Question" tabindex="3" aria-label="Ваш вопрос."></textarea>
               </li>
             </ul>
           </div>
           <div class="form-ask-container">
-            <button class="btn" type="submit">Задать вопрос</button>
+            <button class="btn" type="submit" tabindex="5">Задать вопрос</button>
             <label>
-              <input class="form-ask__checkbox visually-hidden" type="checkbox" name="Personal data" required>
+              <input class="form-ask__checkbox visually-hidden" type="checkbox" name="Personal data" tabindex="4" required>
               <span class="form-ask__control"></span>
               <span class="form-ask__description">Я согласен на обработку<br>персональных данных</span>
             </label>
@@ -248,43 +248,44 @@
     </div>
     <div class="footer__block footer__block--section">
       <h3 class="footer__title footer__title--disable">Разделы сайта</h3>
-      <ul class="footer__list footer__list--section">
+      <ol class="footer__list footer__list--section">
         <li class="footer__item footer__item--section ">
           <a class="footer__link" href="#">
             О Компании
           </a>
         </li>
-        <li class="footer__item footer__item--section footer__item--products">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             Продукты
           </a>
         </li>
-        <li class="footer__item footer__item--section footer__item--production">
+        <li class="footer__item footer__item--section ">
           <a class="footer__link" href="#">
             Производство печатных<br>плат
           </a>
         </li>
-        <li class="footer__item footer__item--section footer__item--mother-board">
+        <li class="footer__item footer__item--section">
           <a class="footer__link" href="#">
             Монтаж печатных плат
           </a>
         </li>
-        <li class="footer__item footer__item--section footer__item--complect">
+        <li class="footer__item footer__item--section ">
           <a class="footer__link" href="#">
             Комплектующие
           </a>
         </li>
-        <li class="footer__item footer__item--section footer__item--delivery">
+        <li class="footer__item footer__item--section" >
           <a class="footer__link" href="#">
             Доставка
           </a>
         </li>
-        <li class="footer__item footer__item--section footer__item--contacs">
+        <li class="footer__item footer__item--section ">
           <a class="footer__link" href="#">
             Контакты
           </a>
         </li>
-      </ul>
+        
+      </ol>
     </div>
     <div class="footer__block footer__block--office">
       <h3 class="footer__title footer__title--disable">Наш офис</h3>
@@ -364,7 +365,6 @@
     </div>
   </div>
 
-  <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

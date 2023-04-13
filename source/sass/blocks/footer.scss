@@ -62,7 +62,7 @@
     margin-top: 19px;
 
     &:not(:last-child) {
-        margin-right: 158px;
+        margin-right: 96px;
 
         @include vp-1023 {
            margin-right: 0;
@@ -87,7 +87,7 @@
 
 .footer__block--section {
 
-    margin-left: 3px;
+    margin-left: 65px;
 
     @include vp-1023 {
         grid-area: 2/1;
@@ -102,7 +102,7 @@
 
 .footer__block--office {
 
-    margin-left: -33px;
+    margin-left: -49px;
 
     @include vp-1023 {
         grid-area: 2/2;
@@ -141,13 +141,26 @@
 }
 
 .footer__list--section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: block;
+    columns: 2;
+    column-gap: 49px;
 
 
     @include vp-1023 {
+        columns: 0;
         display: block;
         column-gap: 0;
+    }
+}
+
+.footer__list--section::after {
+    content: "";
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    
+    @include vp-1023 {
+        display: none;
     }
 }
 
@@ -179,35 +192,6 @@
     }
 }
 
-
-
-.footer__item--delivery {
-    grid-column: 2/3;
-    grid-row: 2/3;
-
-}
-
-.footer__item--contacs {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.footer__item--complect {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.footer__item--mother-board {
-    grid-column: 1/2;
-}
-
-.footer__item--production {
-    grid-column: 1/2;
-}
-
-.footer__item--products {
-    grid-column: 1/2;
-}
 
 
 .footer__item--section {
