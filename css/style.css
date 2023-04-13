@@ -1234,15 +1234,15 @@ main {
 }
 
 .footer__block:not(:last-child) {
-  margin-right: 158px;
+  margin-right: 96px;
 }
 
 .footer__block--section {
-  margin-left: 3px;
+  margin-left: 65px;
 }
 
 .footer__block--office {
-  margin-left: -33px;
+  margin-left: -49px;
 }
 
 .footer__title {
@@ -1278,10 +1278,20 @@ main {
 }
 
 .footer__list--section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-  grid-template-columns: 2fr 1fr;
+  display: block;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -webkit-column-gap: 49px;
+  -moz-column-gap: 49px;
+  column-gap: 49px;
+}
+
+.footer__list--section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 40px;
 }
 
 .footer__list--social {
@@ -1298,51 +1308,6 @@ main {
   font-weight: 400;
   font-size: 16px;
   line-height: 135%;
-}
-
-.footer__item--delivery {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-}
-
-.footer__item--contacs {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-.footer__item--complect {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.footer__item--mother-board {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.footer__item--production {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.footer__item--products {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
 }
 
 .footer__item--section {
@@ -1470,11 +1435,15 @@ main {
   margin-top: 120px;
 }
 
+.advantages__item {
+  min-height: 300px;
+}
+
 .advantages__item-container {
   border: 1px solid #e5e5e5;
   border-left: 5px solid #00b2ff;
   padding: 38px 42px;
-  min-height: 300px;
+  height: 100%;
 }
 
 .advantages__item-container:hover {
@@ -1746,10 +1715,11 @@ main {
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  -webkit-column-gap: 19px;
+  -moz-column-gap: 19px;
+  column-gap: 19px;
 }
 
 .fieldset-data li {
@@ -1757,13 +1727,13 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  width: 100%;
   line-height: 22px;
   color: #ffffff;
 }
 
 .fieldset-data li:not(:last-child) {
   margin-bottom: 20px;
-  margin-right: 36px;
 }
 
 .fieldset-data input {
@@ -1771,6 +1741,7 @@ main {
   border-radius: 3px;
   border: 0;
   width: 100%;
+  max-width: 275px;
   padding: 15px;
   outline: none;
   color: #ffffff;
@@ -1814,6 +1785,7 @@ main {
   border-radius: 3px;
   padding: 26px 16px;
   width: 100%;
+  max-width: 580px;
   height: 155px;
   outline: none;
   color: #ffffff;
@@ -1896,7 +1868,7 @@ main {
   padding-bottom: 20px;
 }
 
-.fieldset-container::after {
+.form::after {
   content: "";
   width: 510px;
   height: 285px;
@@ -2008,7 +1980,7 @@ main {
 */
 
 @media (max-width: 1919px) {
-  .fieldset-container::after {
+  .form::after {
     left: 2px;
   }
 }
@@ -2123,10 +2095,17 @@ main {
   }
 
   .footer__list--section {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
     display: block;
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
+  }
+
+  .footer__list--section::after {
+    display: none;
   }
 
   .footer__list--social {
@@ -2186,11 +2165,11 @@ main {
 
   .advantages__item {
     margin: 0;
+    min-height: 360px;
   }
 
   .advantages__item-container {
     padding: 32px 38px;
-    min-height: 360px;
     min-width: 320px;
   }
 
@@ -2319,11 +2298,10 @@ main {
   }
 
   .fieldset-container {
-    padding-left: 0;
     padding-top: 28px;
   }
 
-  .fieldset-container::after {
+  .form::after {
     width: 0;
     height: 0;
   }
@@ -2589,12 +2567,15 @@ main {
     margin-top: 50px;
   }
 
+  .advantages__item {
+    min-height: 340px;
+  }
+
   .advantages__item:not(:last-child) {
     margin-bottom: 30px;
   }
 
   .advantages__item-container {
-    min-height: 340px;
     min-width: 270px;
     padding: 30px 30px;
   }
