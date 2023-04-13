@@ -1715,13 +1715,11 @@ main {
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
   -webkit-column-gap: 19px;
   -moz-column-gap: 19px;
   column-gap: 19px;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
 }
 
 .fieldset-data li {
@@ -1729,7 +1727,7 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  max-width: 275px;
+  width: 100%;
   line-height: 22px;
   color: #ffffff;
 }
@@ -1743,6 +1741,7 @@ main {
   border-radius: 3px;
   border: 0;
   width: 100%;
+  max-width: 275px;
   padding: 15px;
   outline: none;
   color: #ffffff;
@@ -1786,6 +1785,7 @@ main {
   border-radius: 3px;
   padding: 26px 16px;
   width: 100%;
+  max-width: 580px;
   height: 155px;
   outline: none;
   color: #ffffff;
@@ -2095,9 +2095,9 @@ main {
   }
 
   .footer__list--section {
-    -webkit-columns: 0;
-    -moz-columns: 0;
-    columns: 0;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
     display: block;
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
@@ -2298,7 +2298,6 @@ main {
   }
 
   .fieldset-container {
-    padding-left: 0;
     padding-top: 28px;
   }
 

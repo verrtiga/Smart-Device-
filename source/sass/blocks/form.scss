@@ -79,9 +79,8 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     column-gap: 19px;
-    grid-template-rows: auto;
 
     @include vp-767 {
         display: block;
@@ -93,7 +92,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    max-width: 275px;
+    width: 100%;
     line-height: 22px;
     color: $color-default-white;
 }
@@ -115,6 +114,7 @@
     border-radius: 3px;
     border: 0;
     width: 100%;
+    max-width: 275px;
     padding: 15px;
     outline: none;
     color: $color-default-white;
@@ -151,6 +151,7 @@
     border-radius: 3px;
     padding: 26px 16px;
     width: 100%;
+    max-width: 580px;
     height: 155px;
     outline: none;
     color: $color-default-white;
@@ -252,7 +253,6 @@
     padding-bottom: 20px;
 
     @include vp-1023 {
-        padding-left: 0;
         padding-top: 28px;
     }
 
