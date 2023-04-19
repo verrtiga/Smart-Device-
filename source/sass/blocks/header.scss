@@ -74,4 +74,8 @@
 .button-wrapper {
     margin-left: 155px;
     margin-top: 6px;
+
+    @include vp-1023 {
+        display: none;
+    }
 }

@@ -2049,6 +2049,10 @@ main {
     padding-top: 20px;
   }
 
+  .button-wrapper {
+    display: none;
+  }
+
   .footer {
     min-height: 465px;
     padding-top: 50px;
