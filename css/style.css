@@ -1088,8 +1088,8 @@ main {
 }
 
 .navigation {
-  margin-left: auto;
-  margin-top: 6px;
+  margin-left: 176px;
+  margin-top: 10px;
 }
 
 .navigation__list {
@@ -1170,7 +1170,6 @@ main {
   display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
-  padding-bottom: 29px;
   min-height: 120px;
 }
 
@@ -1196,6 +1195,11 @@ main {
 
 .header__logo:hover {
   opacity: 0.5;
+}
+
+.button-wrapper {
+  margin-left: 155px;
+  margin-top: 6px;
 }
 
 .footer {
@@ -1980,6 +1984,10 @@ main {
 */
 
 @media (max-width: 1919px) {
+  .fieldset-container {
+    padding-left: 650px;
+  }
+
   .form::after {
     left: 2px;
   }
@@ -2039,6 +2047,10 @@ main {
   .header-wrapper {
     margin: 0;
     padding-top: 20px;
+  }
+
+  .button-wrapper {
+    display: none;
   }
 
   .footer {
