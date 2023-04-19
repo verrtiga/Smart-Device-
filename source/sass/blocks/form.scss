@@ -252,6 +252,10 @@
     padding-top: 162px;
     padding-bottom: 20px;
 
+    @include vp-1919 {
+        padding-left: 650px;
+    }
+
     @include vp-1023 {
         padding-top: 28px;
     }
