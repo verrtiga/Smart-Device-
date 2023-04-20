@@ -56,6 +56,7 @@
     }
 
     @include vp-767 {
+        min-height: 340px;
         min-width: 270px;
         padding: 30px 30px;
     }

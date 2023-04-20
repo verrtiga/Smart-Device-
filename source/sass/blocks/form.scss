@@ -120,7 +120,7 @@
     color: $color-default-white;
 
     @include vp-1023 {
-        width: 100%;
+        max-width: 100%;
     }
 
     @include vp-767 {
@@ -158,7 +158,7 @@
 
     @include vp-1023 {
         padding: 33px 12px;
-        width: 100%;
+        max-width: 100%;
     }
 
     @include vp-767 {
@@ -229,6 +229,10 @@
     padding-left: 75px;
     padding-top: 12px;
 
+    @include vp-1023 {
+        padding-left: 110px;
+    }
+
     @include vp-767 {
         padding-left: 28px;
         padding-top: 25px;
@@ -262,7 +266,8 @@
 
     @include vp-767 {
         padding-top: 39px;
-        padding-bottom: 39px;;
+        padding-bottom: 39px;
+        ;
     }
 
 }
@@ -319,6 +324,9 @@
     left: 52px;
     top: 20px;
 
+    @include vp-1023 {
+        left: 85px;
+    }
 
     @include vp-767 {
         left: -266px;

@@ -2299,16 +2299,20 @@ main {
   }
 
   .fieldset-data input {
-    width: 100%;
+    max-width: 100%;
   }
 
   .fieldset-data textarea {
     padding: 33px 12px;
-    width: 100%;
+    max-width: 100%;
   }
 
   .form-ask-container label {
     margin-top: -6px;
+  }
+
+  .form-ask__description {
+    padding-left: 110px;
   }
 
   .form__img {
@@ -2322,6 +2326,10 @@ main {
   .form::after {
     width: 0;
     height: 0;
+  }
+
+  .form-ask__control {
+    left: 85px;
   }
 }
 
@@ -2594,6 +2602,7 @@ main {
   }
 
   .advantages__item-container {
+    min-height: 340px;
     min-width: 270px;
     padding: 30px 30px;
   }
@@ -2636,7 +2645,7 @@ main {
   .about-container {
     padding: 0;
     padding-bottom: 81px;
-    margin-top: 47px;
+    margin-top: 16px;
   }
 
   .about-container h2::before {
