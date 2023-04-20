@@ -15,7 +15,6 @@
 .header-container {
     display: flex;
     padding-top: 30px;
-    padding-bottom: 29px;
     min-height: 120px;
     ;
 
@@ -33,7 +32,7 @@
 
 .header-wrapper {
 
-    margin-right: 20px;
+    flex-shrink: 0;
 
     @include vp-1023 {
         margin: 0;
@@ -70,4 +69,15 @@
 
 .header__logo:hover {
     opacity: 0.5;
+}
+
+.button-wrapper {
+    margin-right: 57px;
+    margin-left: -36px;
+    margin-top: 6px;
+    flex-shrink: 0;
+
+    @include vp-1023 {
+        display: none;
+    }
 }
