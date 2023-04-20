@@ -32,7 +32,7 @@
 
 .header-wrapper {
 
-    margin-right: 20px;
+    flex-shrink: 0;
 
     @include vp-1023 {
         margin: 0;
@@ -72,8 +72,10 @@
 }
 
 .button-wrapper {
-    margin-left: 155px;
+    margin-right: 57px;
+    margin-left: -36px;
     margin-top: 6px;
+    flex-shrink: 0;
 
     @include vp-1023 {
         display: none;

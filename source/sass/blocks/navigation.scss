@@ -1,8 +1,9 @@
 .navigation {
-    margin-left: 176px;
     margin-top: 10px;
+    width: 100%;
 
     @include vp-1023 {
+    width: auto;
        margin:0;
        margin-top: 30px;
     }
@@ -20,7 +21,7 @@
     margin: 0;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -54,8 +55,6 @@
 }
 
 .navigation__item--button {
-    margin-left: 4px;
-    margin-right: 58px;
     @include vp-1023 {
         display: none;
     }
@@ -68,13 +67,20 @@
 }
 
 .navigation__item:not(:last-child) {
-    margin-right: 157px;
+    margin-right: 152px;
 
+    @include vp-1023 {
+        margin: 0;
+    }
+}
+
+.navigation__item {
     @include vp-1023 {
         margin: 0;
         width: 21px;
         height: 20px;
         margin-right: 33px;
+        margin-left: 36px;
     }
 }
 
